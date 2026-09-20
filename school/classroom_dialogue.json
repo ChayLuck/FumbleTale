@@ -1,0 +1,413 @@
+{
+	"nodes": [
+		{
+			"id": "intro",
+			"lines": [
+				"Your eyes open to fluorescent light and the smell of chalk dust.",
+				"You try to stand — and can't. Something unseen holds you to the desk, wrist and ankle.",
+				"A faint violet shimmer traces where the bindings should be. This isn't rope.",
+				"Rows of desks stretch out around you, each one occupied by a girl who won't quite meet your eyes."
+			],
+			"next": "hisame_enter"
+		},
+		{
+			"event": "show_hisame",
+			"id": "hisame_enter",
+			"lines": [
+				"A girl with hair the color of glacier ice peels away from the front row.",
+				"Her eyes are the same color — and just as cold.",
+				"She stops at your desk, arms crossed, studying you like a problem she hasn't decided is worth solving.",
+				"\"Who are you?\" she asks. \"And what, exactly, are you doing in my classroom?\"",
+				"\"I... don't know,\" you manage. \"I don't remember anything.\""
+			],
+			"next": "hisame_monologue_start",
+			"speaker": "Hisame"
+		},
+		{
+			"event": "hisame_distant",
+			"id": "hisame_monologue_start",
+			"lines": [
+				"She doesn't press further. Instead her gaze drifts past you, out toward the window.",
+				"\"Do you ever notice how boring this world has gotten?\" she says, almost to herself.",
+				"\"Everyone so easy to predict. Colors a little duller every year. Even fear doesn't taste like it used to.\""
+			],
+			"next": "monologue_choice"
+		},
+		{
+			"id": "monologue_choice",
+			"options": [
+				{
+					"label": "Agree with her",
+					"next": "monologue_agree"
+				},
+				{
+					"label": "Talk about yesterday's pasta",
+					"next": "monologue_pasta"
+				},
+				{
+					"label": "Say she's the only pale, cold one here",
+					"next": "monologue_pale"
+				}
+			]
+		},
+		{
+			"id": "monologue_agree",
+			"lines": [
+				"\"I agree,\" you say.",
+				"She glances at you sideways. \"...Don't just agree with everything I say.\" But she keeps talking anyway."
+			],
+			"next": "nail_filing_start"
+		},
+		{
+			"id": "monologue_pasta",
+			"lines": [
+				"You tell her, at some length, exactly how you felt about the spicy tomato pasta you had yesterday.",
+				"She stares at you like you've grown a second head — but there's the faintest twitch at the corner of her mouth she doesn't let you see."
+			],
+			"next": "nail_filing_start"
+		},
+		{
+			"id": "monologue_pale",
+			"lines": [
+				"\"You're one to talk about pale and cold,\" you say.",
+				"She just looks at you. Ice, unblinking, for a long moment."
+			],
+			"next": "nail_filing_start"
+		},
+		{
+			"event": "hisame_nails",
+			"id": "nail_filing_start",
+			"lines": [
+				"She holds up one hand, and a sliver of ice condenses between her fingers — thin, sharp, shaped like a file.",
+				"Without looking up, she starts filing her nails with it, unhurried, like this conversation was already over."
+			],
+			"next": "nails_choice"
+		},
+		{
+			"id": "nails_choice",
+			"options": [
+				{
+					"label": "\"Your nails give me chills.\"",
+					"next": "nails_chills"
+				},
+				{
+					"label": "Say nothing",
+					"next": "nails_boring"
+				}
+			]
+		},
+		{
+			"event": "nails_chills_reaction",
+			"id": "nails_chills",
+			"lines": [
+				"She actually laughs — short, surprised, like it caught her off guard as much as you.",
+				"\"...Chills. Cute.\" She doesn't stop filing."
+			],
+			"next": "hisame_monologue_end"
+		},
+		{
+			"event": "nails_boring_reaction",
+			"id": "nails_boring",
+			"lines": [
+				"You don't say anything.",
+				"She doesn't seem to expect you to."
+			],
+			"next": "hisame_monologue_end"
+		},
+		{
+			"event": "end_monologue",
+			"id": "hisame_monologue_end",
+			"next": "help_choice"
+		},
+		{
+			"id": "help_choice",
+			"options": [
+				{
+					"label": "Ask her for help",
+					"next": "help_yes"
+				},
+				{
+					"label": "Say nothing",
+					"next": "help_no"
+				}
+			]
+		},
+		{
+			"id": "help_yes",
+			"lines": [
+				"\"Help you?\" She almost laughs. \"Why would I do that?\"",
+				"She studies you a moment longer, and something calculating crosses her face.",
+				"\"...Unless. If you agreed to work for me, I could get you out of these.\""
+			],
+			"next": "work_choice"
+		},
+		{
+			"id": "help_no",
+			"lines": [
+				"You say nothing.",
+				"Hisame watches you for a long moment, then turns back to the front of the room without another word."
+			],
+			"next": "stay_bound_ending"
+		},
+		{
+			"id": "work_choice",
+			"options": [
+				{
+					"label": "What kind of work?",
+					"next": "work_question"
+				},
+				{
+					"label": "Accept",
+					"next": "work_accept"
+				},
+				{
+					"label": "Refuse",
+					"next": "work_refuse"
+				}
+			]
+		},
+		{
+			"id": "work_question",
+			"lines": [
+				"\"That's need-to-know,\" she says. \"And you don't need to know. Yet.\""
+			],
+			"next": "work_choice"
+		},
+		{
+			"event": "become_dog",
+			"id": "work_accept",
+			"lines": [
+				"\"Good answer,\" she says, and for the first time she almost smiles.",
+				"She reaches toward you, and the violet shimmer around your wrist responds to her like it was always hers to command."
+			]
+		},
+		{
+			"id": "work_refuse",
+			"lines": [
+				"\"Your choice.\" She's already turning away. \"Don't say I didn't offer.\""
+			],
+			"next": "stay_bound_ending"
+		},
+		{
+			"id": "stay_bound_ending",
+			"lines": [
+				"Hours pass. The bindings don't loosen.",
+				"Someone else will come looking, eventually."
+			],
+			"next": "nazuna_intro"
+		},
+		{
+			"event": "show_nazuna",
+			"id": "nazuna_intro",
+			"lines": [
+				"Hisame doesn't come back. But a shadow lingers at the edge of your desk, shifting from foot to foot.",
+				"She's smaller, mousy brown hair falling half over her face, one sleeve pulled down over her hand and gripped tight.",
+				"\"H-hi,\" she whispers, eyes on the floor. \"Um. Are you... okay? Th-that's a dumb question. Sorry.\"",
+				"She glances toward the door, then back at you, like she's already regretting walking over."
+			],
+			"next": "book_drop_start",
+			"speaker": "Nazuna"
+		},
+		{
+			"id": "book_drop_start",
+			"lines": [
+				"As she shifts her weight again, a book slips loose from under her arm and lands open on the floor between you.",
+				"She freezes, staring at it like it might bite her."
+			],
+			"next": "book_drop_choice"
+		},
+		{
+			"id": "book_drop_choice",
+			"options": [
+				{
+					"label": "Pick it up",
+					"next": "book_pickup"
+				},
+				{
+					"label": "Leave it",
+					"next": "book_leave"
+				}
+			]
+		},
+		{
+			"id": "book_pickup",
+			"lines": [
+				"You lean down and pick it up before she can."
+			],
+			"next": "book_return_choice"
+		},
+		{
+			"event": "tag_rude",
+			"id": "book_leave",
+			"lines": [
+				"You leave it where it fell.",
+				"She scrambles to grab it herself, cheeks going pink. \"S-sorry. Sorry, I'll just—\""
+			],
+			"next": "nazuna_stage1"
+		},
+		{
+			"id": "book_return_choice",
+			"options": [
+				{
+					"label": "Give it back",
+					"next": "book_give_back"
+				},
+				{
+					"label": "\"Haha, free book.\"",
+					"next": "book_free_book"
+				}
+			]
+		},
+		{
+			"event": "tag_kind",
+			"id": "book_give_back",
+			"lines": [
+				"You hand it back. She takes it like it's something fragile.",
+				"\"Th-thank you,\" she says — and for a second, something like a real laugh slips out before she can catch it."
+			],
+			"next": "nazuna_stage1"
+		},
+		{
+			"event": "tag_chad",
+			"id": "book_free_book",
+			"lines": [
+				"\"Haha. Free book,\" you say, tucking it under your arm.",
+				"Her face goes bright red. \"W-wait, that's— okay, um, could I— never mind. Never mind, keep it.\"",
+				"She looks like she wants the floor to open up and swallow her."
+			],
+			"next": "nazuna_stage1"
+		},
+		{
+			"id": "nazuna_stage1",
+			"options": [
+				{
+					"label": "Reassure her",
+					"next": "stage1_reassure_reply"
+				},
+				{
+					"label": "Ask her to hurry",
+					"next": "nazuna_leaves"
+				}
+			]
+		},
+		{
+			"id": "stage1_reassure_reply",
+			"lines": [
+				"\"It's okay,\" you say quietly. \"You don't have to be scared.\"",
+				"Her shoulders drop, just a little. \"...Okay. Okay, um. Thank you.\""
+			],
+			"next": "nazuna_stage2"
+		},
+		{
+			"id": "nazuna_stage2",
+			"options": [
+				{
+					"label": "Tell her she's pretty",
+					"next": "nazuna_success"
+				},
+				{
+					"label": "Ask her to hurry",
+					"next": "nazuna_leaves"
+				}
+			]
+		},
+		{
+			"id": "nazuna_leaves",
+			"lines": [
+				"Footsteps echo down the hall and she flinches, already backing away.",
+				"\"I— I have to go,\" she says. \"I'm sorry. I'm sorry.\"",
+				"She's gone before you can say anything, and the classroom feels colder for it."
+			],
+			"next": "cherry_reveal_start"
+		},
+		{
+			"event": "nazuna_success",
+			"id": "nazuna_success",
+			"lines": [
+				"She blinks, cheeks going red. \"W-what? You... you really think so?\"",
+				"Something in her steadies. \"Okay. Okay, I can do this.\"",
+				"Her fingers find the shimmer at your wrist, and this time they don't pull back — the violet light unravels like it was never anything more than thread.",
+				"\"There,\" she breathes, surprised at herself. \"You're free. Just— stay close to me, okay? I don't want to lose you now.\""
+			]
+		},
+		{
+			"event": "show_cherry",
+			"id": "cherry_reveal_start",
+			"lines": [
+				"A new voice cuts through the quiet — bright, familiar, far too casual for a room full of frozen dread.",
+				"\"Aw, look at you,\" she says, pink hair catching a light that has no business being in this room. \"Nobody's claimed you, huh?\"",
+				"\"Ahh, well. Women, am I right?\" She waves a hand, unbothered. \"Don't worry about it.\""
+			],
+			"next": "cherry_greeting2",
+			"speaker": "Cherry"
+		},
+		{
+			"id": "cherry_greeting2",
+			"lines": [
+				"\"...Haven't we met before?\" you ask, the words out before you can stop them.",
+				"She blinks, then laughs — bright and delighted. \"Oh, really?\" A small shrug. \"Could be.\""
+			],
+			"next": "cherry_recognition_choice"
+		},
+		{
+			"id": "cherry_recognition_choice",
+			"options": [
+				{
+					"label": "Yes",
+					"next": "cherry_rec_yes"
+				},
+				{
+					"label": "You look... a little different, actually",
+					"next": "cherry_rec_diff"
+				},
+				{
+					"label": "No, you don't look alike",
+					"next": "cherry_rec_no"
+				}
+			]
+		},
+		{
+			"id": "cherry_rec_yes",
+			"lines": [
+				"\"Yeah,\" you say. \"Pretty much.\"",
+				"She beams, pleased with herself."
+			],
+			"next": "cherry_forms_line"
+		},
+		{
+			"id": "cherry_rec_diff",
+			"lines": [
+				"\"You look... a little different, actually,\" you admit.",
+				"She tilts her head, more curious than bothered by it."
+			],
+			"next": "cherry_forms_line"
+		},
+		{
+			"id": "cherry_rec_no",
+			"lines": [
+				"\"No,\" you say. \"You don't look alike at all.\"",
+				"She pouts, mock-wounded, a hand pressed to her chest."
+			],
+			"next": "cherry_forms_line"
+		},
+		{
+			"id": "cherry_forms_line",
+			"lines": [
+				"\"Hmmm. Keeping every form straight is so exhausting,\" she says, sweet as ever, tapping a finger to her chin.",
+				"\"I do try, though.\""
+			],
+			"next": "cherry_ending_line"
+		},
+		{
+			"event": "cherry_end",
+			"id": "cherry_ending_line",
+			"lines": [
+				"She waves the thought off before you can ask what she meant, crouching to look at the shimmer around your wrist.",
+				"\"Anyway — looks like you're stuck with me,\" she says. \"Guess you're not a well-behaved bird, or an obedient.\"",
+				"Her fingers brush the binding and it comes undone like it was never anything more than a suggestion.",
+				"\"Come on. Follow me.\""
+			]
+		}
+	],
+	"start_id": "intro"
+}

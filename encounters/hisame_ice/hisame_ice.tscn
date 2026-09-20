@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://b1e8w0xbxgi40"]
+
+[ext_resource type="Script" uid="uid://h6yotib6mplk" path="res://encounters/hisame_ice/hisame_ice.gd" id="1"]
+[ext_resource type="Resource" path="res://encounters/hisame_ice/hisame_ice_data.tres" id="2"]
+[ext_resource type="PackedScene" path="res://components/dialog_box.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://components/encounter_menu.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://components/encounter_arena.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://components/encounter_hud.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://components/bullet_spawner.tscn" id="7"]
+[ext_resource type="PackedScene" path="res://components/end_screen.tscn" id="8"]
+[ext_resource type="PackedScene" path="res://components/inventory_menu.tscn" id="9"]
+[ext_resource type="Script" uid="uid://cu0ix6litowvj" path="res://components/theme_backdrop.gd" id="10"]
+[ext_resource type="PackedScene" path="res://components/ambient_dust.tscn" id="11"]
+
+[node name="HisameIce" type="Node2D" unique_id=1175427406]
+script = ExtResource("1")
+data = ExtResource("2")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1172267785]
+unique_name_in_owner = true
+offset_right = 640.0
+offset_bottom = 480.0
+script = ExtResource("10")
+
+[node name="AmbientDustBg" parent="." unique_id=1990784100 instance=ExtResource("11")]
+unique_name_in_owner = true
+
+[node name="EnemySprite" type="AnimatedSprite2D" parent="." unique_id=1582993164]
+unique_name_in_owner = true
+position = Vector2(320, 190)
+scale = Vector2(1.6, 1.6)
+
+[node name="EncounterHud" parent="." unique_id=1256497544 instance=ExtResource("6")]
+unique_name_in_owner = true
+
+[node name="EncounterArena" parent="." unique_id=438079684 instance=ExtResource("5")]
+unique_name_in_owner = true
+bounds = Rect2(200, 302, 240, 150)
+
+[node name="DialogBox" parent="." unique_id=287096788 instance=ExtResource("3")]
+unique_name_in_owner = true
+
+[node name="EncounterMenu" parent="." unique_id=1202553357 instance=ExtResource("4")]
+unique_name_in_owner = true
+
+[node name="BulletSpawner" parent="." unique_id=1366765576 instance=ExtResource("7")]
+unique_name_in_owner = true
+
+[node name="EndScreen" parent="." unique_id=1819352539 instance=ExtResource("8")]
+unique_name_in_owner = true
+
+[node name="InventoryMenu" parent="." unique_id=1549058577 instance=ExtResource("9")]
+unique_name_in_owner = true

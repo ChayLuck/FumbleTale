@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EncounterData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://core/encounter_data.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://overworld/assets/hisame_portraits/hisame_furious_frames.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+enemy_name = "Hisame"
+enemy_max_hp = 30
+player_max_hp = 20
+intro_lines = Array[String](["The cold around you sharpens into something with teeth.", "Hisame's eyes have gone glassy and bright, ice crackling faintly at her fingertips.", "\"You want to test me?\" she says. \"Fine. Let's see how long you last.\""])
+intro_choices = Array[DialogueChoice]([])
+menu_labels = Array[String](["Plead", "Fight", "Item"])
+theme_color = Color(0.55, 0.85, 1.0, 1)
+enemy_frames = ExtResource("2")
+return_scene = "res://overworld/mountain_road.tscn"

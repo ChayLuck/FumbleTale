@@ -1,0 +1,90 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_0.png" id="1_h6o8s"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_1.png" id="2_jg1o5"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_2.png" id="3_tc460"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_3.png" id="4_cihla"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_4.png" id="5_vguu0"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_5.png" id="6_h8jvc"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_6.png" id="7_sgwbe"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_7.png" id="8_0fq68"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_8.png" id="9_415yx"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_9.png" id="10_4p58y"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_10.png" id="11_eg3qq"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_11.png" id="12_lv2h3"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_12.png" id="13_vfgun"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_13.png" id="14_itwnw"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_14.png" id="15_4qyho"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_15.png" id="16_0avqy"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_16.png" id="17_8qqc5"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_17.png" id="18_pu8dl"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_18.png" id="19_bf31u"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_idle_19.png" id="20_4xddm"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_h6o8s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jg1o5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_tc460")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cihla")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vguu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_h8jvc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_sgwbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_0fq68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_415yx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4p58y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_eg3qq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_lv2h3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vfgun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_itwnw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_4qyho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0avqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_8qqc5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_pu8dl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_bf31u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_4xddm")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 20.0
+}]

@@ -1,0 +1,96 @@
+{
+	"nodes": [
+		{
+			"id": "line_1",
+			"lines": [
+				"...No. That's still not it."
+			],
+			"next": "line_2"
+		},
+		{
+			"id": "line_2",
+			"lines": [
+				"Okay — from the top. One, two, three—"
+			],
+			"next": "line_3"
+		},
+		{
+			"id": "line_3",
+			"lines": [
+				"...Still flat. I can't feel the beat at all."
+			],
+			"next": "line_4"
+		},
+		{
+			"id": "line_4",
+			"lines": [
+				"Maybe I'm just kidding myself with all this."
+			],
+			"next": "line_5"
+		},
+		{
+			"id": "line_5",
+			"lines": [
+				"..."
+			],
+			"next": "line_6"
+		},
+		{
+			"id": "line_6",
+			"lines": [
+				"This music is garbage."
+			],
+			"next": "line_7"
+		},
+		{
+			"id": "line_7",
+			"lines": [
+				"Ooh, there's candy — the perks of having a roommate."
+			],
+			"next": "line_8"
+		},
+		{
+			"event": "candy_eaten",
+			"id": "line_8",
+			"lines": [
+				"Nom nom nom."
+			],
+			"next": "line_9"
+		},
+		{
+			"id": "line_9",
+			"lines": [
+				"Huh. That's actually pretty good."
+			],
+			"next": "line_10"
+		},
+		{
+			"id": "line_10",
+			"lines": [
+				"Is the music getting better, or is it just me?"
+			],
+			"next": "line_11"
+		},
+		{
+			"id": "line_11",
+			"lines": [
+				"Wait... didn't I turn the music off?"
+			],
+			"next": "line_12"
+		},
+		{
+			"id": "line_12",
+			"lines": [
+				"Okay, this is amaaazing!"
+			],
+			"next": "line_13"
+		},
+		{
+			"id": "line_13",
+			"lines": [
+				"Hahahahahaha!"
+			]
+		}
+	],
+	"start_id": "line_1"
+}

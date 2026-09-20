@@ -1,0 +1,45 @@
+{
+	"nodes": [
+		{
+			"id": "subwoofer_intro",
+			"lines": [
+				"A low hum rattles the floor tiles...",
+				"Something huge rolls out of the shadows!"
+			]
+		},
+		{
+			"id": "subwoofer_free",
+			"lines": [
+				"The Melodic Subwoofer hums quietly, powered down."
+			]
+		},
+		{
+			"id": "cyclops_intro",
+			"lines": [
+				"A wall of dead screens flickers to life...",
+				"Something huge lurches into view!"
+			]
+		},
+		{
+			"id": "cyclops_free",
+			"lines": [
+				"The Cathode Cyclops flickers dimly, powered down."
+			]
+		},
+		{
+			"id": "cake",
+			"lines": [
+				"\"I AM A HUGE, DELICIOUS CAAAAAAAAAAAAAKE!\""
+			]
+		},
+		{
+			"id": "door_open",
+			"lines": [
+				"You fit the two halves of the key together...",
+				"A door creaks open where there was only wall before...",
+				"You step through into what comes next."
+			]
+		}
+	],
+	"start_id": "subwoofer_intro"
+}

@@ -1,0 +1,201 @@
+{
+	"nodes": [
+		{
+			"id": "mushroom_intro",
+			"lines": [
+				"\"I am Mushroom Girl.\""
+			],
+			"next": "mushroom_recognition"
+		},
+		{
+			"id": "mushroom_block",
+			"lines": [
+				"\"Not so fast.\"",
+				"She steps square into your path, arms crossed.",
+				"\"I am Mushroom Girl.\""
+			],
+			"next": "mushroom_recognition"
+		},
+		{
+			"id": "mushroom_recognition",
+			"options": [
+				{
+					"label": "Mushroom Girl?",
+					"next": "mushroom_yes"
+				},
+				{
+					"label": "Are you really Mushroom Girl?",
+					"next": "mushroom_yes"
+				}
+			]
+		},
+		{
+			"id": "mushroom_yes",
+			"lines": [
+				"\"Yes, I'm Mushroom Girl.\""
+			],
+			"next": "mushroom_choice"
+		},
+		{
+			"id": "mushroom_choice",
+			"options": [
+				{
+					"label": "Fight",
+					"next": "mushroom_fight"
+				}
+			]
+		},
+		{
+			"event": "mushroom_fight",
+			"id": "mushroom_fight"
+		},
+		{
+			"id": "strawberry_intro",
+			"lines": [
+				"\"I am Strawberry Girl.\""
+			],
+			"next": "strawberry_recognition"
+		},
+		{
+			"id": "strawberry_block",
+			"lines": [
+				"\"Uh-uh. Not past me.\"",
+				"She plants herself in the middle of the path.",
+				"\"I am Strawberry Girl.\""
+			],
+			"next": "strawberry_recognition"
+		},
+		{
+			"id": "strawberry_recognition",
+			"options": [
+				{
+					"label": "Strawberry Girl?",
+					"next": "strawberry_yes"
+				},
+				{
+					"label": "Are you really Strawberry Girl?",
+					"next": "strawberry_yes"
+				}
+			]
+		},
+		{
+			"id": "strawberry_yes",
+			"lines": [
+				"\"Yes, I'm Strawberry Girl.\""
+			],
+			"next": "strawberry_choice"
+		},
+		{
+			"id": "strawberry_choice",
+			"options": [
+				{
+					"label": "Fight",
+					"next": "strawberry_fight"
+				}
+			]
+		},
+		{
+			"event": "strawberry_fight",
+			"id": "strawberry_fight"
+		},
+		{
+			"id": "ivy_intro",
+			"lines": [
+				"\"I am Ivy.\""
+			],
+			"next": "ivy_recognition"
+		},
+		{
+			"id": "ivy_block",
+			"lines": [
+				"\"Hey — where do you think you're going?\"",
+				"Vines snap taut across the path, and you're pulled right back to where you started.",
+				"\"I am Ivy.\""
+			],
+			"next": "ivy_recognition"
+		},
+		{
+			"id": "ivy_recognition",
+			"options": [
+				{
+					"label": "Ivy?",
+					"next": "ivy_yes"
+				},
+				{
+					"label": "Are you really Ivy?",
+					"next": "ivy_yes"
+				}
+			]
+		},
+		{
+			"id": "ivy_yes",
+			"lines": [
+				"\"Yes, I'm Ivy.\""
+			],
+			"next": "ivy_choice"
+		},
+		{
+			"id": "ivy_choice",
+			"options": [
+				{
+					"label": "Fight",
+					"next": "ivy_fight"
+				}
+			]
+		},
+		{
+			"event": "ivy_fight",
+			"id": "ivy_fight"
+		},
+		{
+			"id": "dog_refuse",
+			"lines": [
+				"A large dog blocks the path, hackles raised, growling low.",
+				"\"Not one paw further,\" it seems to growl. \"Bring me a mushroom and a strawberry, or turn back.\""
+			]
+		},
+		{
+			"id": "dog_offer",
+			"lines": [
+				"The dog sniffs at you, tail wagging despite the growl.",
+				"\"...you actually brought them?\""
+			],
+			"next": "dog_choice"
+		},
+		{
+			"id": "dog_choice",
+			"options": [
+				{
+					"label": "Give the mushroom and strawberry",
+					"next": "dog_give"
+				},
+				{
+					"label": "Not yet",
+					"next": "dog_wait"
+				}
+			]
+		},
+		{
+			"event": "dog_give",
+			"id": "dog_give",
+			"lines": [
+				"The dog wolfs down the mushroom and the strawberry in two bites, then steps aside with a satisfied huff.",
+				"The path onward is finally clear."
+			]
+		},
+		{
+			"id": "dog_wait",
+			"lines": [
+				"The dog sits back down, watching you closely.",
+				"It's not moving until you hand them over."
+			]
+		},
+		{
+			"id": "exit_line",
+			"lines": [
+				"The path keeps winding deeper into the forest..."
+			]
+		}
+	],
+	"start_id": "mushroom_intro"
+}

@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://co1gxjpcb0h8d"]
+
+[ext_resource type="Script" uid="uid://bvuu0oqmd3ckn" path="res://encounters/cafe_girl/cafe_girl.gd" id="1"]
+[ext_resource type="Resource" path="res://encounters/cafe_girl/cafe_girl_data.tres" id="2"]
+[ext_resource type="PackedScene" path="res://components/dialog_box.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://components/encounter_menu.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://components/encounter_arena.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://components/encounter_hud.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://components/end_screen.tscn" id="7"]
+[ext_resource type="PackedScene" path="res://components/inventory_menu.tscn" id="8"]
+[ext_resource type="Script" uid="uid://cu0ix6litowvj" path="res://components/theme_backdrop.gd" id="9"]
+[ext_resource type="PackedScene" path="res://components/ambient_dust.tscn" id="10"]
+
+[node name="CafeGirl" type="Node2D" unique_id=607562543]
+script = ExtResource("1")
+data = ExtResource("2")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1474046750]
+unique_name_in_owner = true
+offset_right = 640.0
+offset_bottom = 480.0
+script = ExtResource("9")
+
+[node name="AmbientDustBg" parent="." unique_id=2031524993 instance=ExtResource("10")]
+unique_name_in_owner = true
+
+[node name="EnemySprite" type="AnimatedSprite2D" parent="." unique_id=1284991348]
+unique_name_in_owner = true
+position = Vector2(320, 190)
+scale = Vector2(1.96, 1.96)
+
+[node name="EncounterHud" parent="." unique_id=1887286448 instance=ExtResource("6")]
+unique_name_in_owner = true
+
+[node name="EncounterArena" parent="." unique_id=2137154438 instance=ExtResource("5")]
+unique_name_in_owner = true
+
+[node name="DialogBox" parent="." unique_id=1691973741 instance=ExtResource("3")]
+unique_name_in_owner = true
+
+[node name="EncounterMenu" parent="." unique_id=1151390595 instance=ExtResource("4")]
+unique_name_in_owner = true
+
+[node name="EndScreen" parent="." unique_id=856322480 instance=ExtResource("7")]
+unique_name_in_owner = true
+
+[node name="InventoryMenu" parent="." unique_id=775287387 instance=ExtResource("8")]
+unique_name_in_owner = true

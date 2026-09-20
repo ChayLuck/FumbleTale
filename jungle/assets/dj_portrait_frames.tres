@@ -1,0 +1,90 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_0.png" id="1_g6phi"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_1.png" id="2_bfqe3"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_2.png" id="3_cpqmm"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_3.png" id="4_j3bxg"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_4.png" id="5_lo12f"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_5.png" id="6_pypq1"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_6.png" id="7_a678p"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_7.png" id="8_tjdie"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_8.png" id="9_6pm45"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_9.png" id="10_mf74v"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_10.png" id="11_rc6xh"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_11.png" id="12_fsdll"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_12.png" id="13_iua42"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_13.png" id="14_grykb"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_14.png" id="15_mke5d"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_15.png" id="16_bm8g8"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_16.png" id="17_yyyn6"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_17.png" id="18_2r17q"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_18.png" id="19_22rjb"]
+[ext_resource type="Texture2D" path="res://jungle/assets/anim/dj_portrait_idle_19.png" id="20_cdxxh"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_g6phi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_bfqe3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cpqmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_j3bxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_lo12f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pypq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a678p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_tjdie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_6pm45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_mf74v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_rc6xh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_fsdll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_iua42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_grykb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_mke5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_bm8g8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_yyyn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_2r17q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_22rjb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_cdxxh")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 20.0
+}]

@@ -1,0 +1,169 @@
+[gd_scene format=3 uid="uid://dt1wkohlu223e"]
+
+[ext_resource type="Script" uid="uid://ccyi806jro734" path="res://encounters/mushroom_girl/mushroom_girl.gd" id="1"]
+[ext_resource type="Script" uid="uid://bokbykgmi5c8f" path="res://encounters/mushroom_girl/platformer_player.gd" id="2"]
+[ext_resource type="SpriteFrames" path="res://overworld/assets/road_player/road_player_frames.tres" id="3"]
+[ext_resource type="PackedScene" path="res://encounters/mushroom_girl/mushroom_enemy.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://components/end_screen.tscn" id="5"]
+[ext_resource type="Texture2D" uid="uid://4v7xhv7u1sd5" path="res://encounters/mushroom_girl/assets/ground_strip.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bon2eij1tbtcw" path="res://encounters/mushroom_girl/assets/flag.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://bnp58qapgfld4" path="res://encounters/mushroom_girl/assets/bg_far.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://vwbqgjqv1py0" path="res://encounters/mushroom_girl/assets/bg_trees.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://bs3n3g10bwc58" path="res://encounters/mushroom_girl/assets/bg_bushes.png" id="10"]
+
+[sub_resource type="RectangleShape2D" id="GroundAShape"]
+size = Vector2(650, 46)
+
+[sub_resource type="RectangleShape2D" id="GroundBShape"]
+size = Vector2(850, 46)
+
+[sub_resource type="RectangleShape2D" id="WallShape"]
+size = Vector2(10, 480)
+
+[sub_resource type="RectangleShape2D" id="FallZoneShape"]
+size = Vector2(1650, 60)
+
+[sub_resource type="RectangleShape2D" id="FlagZoneShape"]
+size = Vector2(30, 80)
+
+[sub_resource type="RectangleShape2D" id="PlayerShape"]
+size = Vector2(36, 56)
+
+[node name="MushroomGirl" type="Node2D" unique_id=2040143510]
+script = ExtResource("1")
+
+[node name="BgParallax" type="ParallaxBackground" parent="." unique_id=1074126310]
+layer = -1
+
+[node name="FarSky" type="ParallaxLayer" parent="BgParallax" unique_id=1413772014]
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(544, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="BgParallax/FarSky" unique_id=774037465]
+texture = ExtResource("8")
+centered = false
+
+[node name="MidTrees" type="ParallaxLayer" parent="BgParallax" unique_id=41262656]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(544, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="BgParallax/MidTrees" unique_id=333667154]
+scale = Vector2(1.1507353, 1)
+texture = ExtResource("9")
+centered = false
+
+[node name="FgParallax" type="ParallaxBackground" parent="." unique_id=1507057419]
+layer = 1
+
+[node name="NearBushes" type="ParallaxLayer" parent="FgParallax" unique_id=1990778783]
+motion_scale = Vector2(1.1, 1.1)
+motion_mirroring = Vector2(544, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="FgParallax/NearBushes" unique_id=368878557]
+texture = ExtResource("10")
+centered = false
+
+[node name="GroundA" type="StaticBody2D" parent="." unique_id=167106370]
+position = Vector2(325, 450)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundA" unique_id=92302950]
+position = Vector2(0, 7)
+shape = SubResource("GroundAShape")
+
+[node name="Visual" type="TextureRect" parent="GroundA" unique_id=1160886820]
+offset_left = -325.0
+offset_top = -32.0
+offset_right = 325.0
+offset_bottom = 32.0
+texture = ExtResource("6")
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="GroundB" type="StaticBody2D" parent="." unique_id=1577422960]
+position = Vector2(1175, 450)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundB" unique_id=1334789870]
+position = Vector2(0, 7)
+shape = SubResource("GroundBShape")
+
+[node name="Visual" type="TextureRect" parent="GroundB" unique_id=1616612080]
+offset_left = -425.0
+offset_top = -32.0
+offset_right = 425.0
+offset_bottom = 32.0
+texture = ExtResource("6")
+stretch_mode = 1
+
+[node name="LeftWall" type="StaticBody2D" parent="." unique_id=1892811211]
+position = Vector2(-5, 240)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall" unique_id=1760513532]
+shape = SubResource("WallShape")
+
+[node name="FallDeathZone" type="Area2D" parent="." unique_id=731590237]
+unique_name_in_owner = true
+position = Vector2(800, 530)
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallDeathZone" unique_id=2070926536]
+shape = SubResource("FallZoneShape")
+
+[node name="FlagZone" type="Area2D" parent="." unique_id=1557975609]
+unique_name_in_owner = true
+position = Vector2(1557, 393)
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FlagZone" unique_id=696434034]
+shape = SubResource("FlagZoneShape")
+
+[node name="Visual" type="Sprite2D" parent="FlagZone" unique_id=587886444]
+position = Vector2(10, 11)
+texture = ExtResource("7")
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=195958809]
+unique_name_in_owner = true
+position = Vector2(63, 434)
+collision_layer = 2
+collision_mask = 5
+script = ExtResource("2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1905095292]
+position = Vector2(0, -28)
+shape = SubResource("PlayerShape")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Player" unique_id=1652213451]
+unique_name_in_owner = true
+position = Vector2(0, -28)
+scale = Vector2(0.47, 0.47)
+sprite_frames = ExtResource("3")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1671133108]
+zoom = Vector2(1.5, 1.5)
+limit_left = 0
+limit_top = 0
+limit_right = 1600
+limit_bottom = 480
+position_smoothing_enabled = true
+
+[node name="Enemy1" parent="." unique_id=1353604674 instance=ExtResource("4")]
+position = Vector2(301, 437)
+
+[node name="Enemy2" parent="." unique_id=42951215 instance=ExtResource("4")]
+position = Vector2(951, 436)
+patrol_range = 80.0
+
+[node name="Enemy3" parent="." unique_id=981949790 instance=ExtResource("4")]
+position = Vector2(1303, 436)
+
+[node name="UILayer" type="CanvasLayer" parent="." unique_id=865171358]
+layer = 10
+
+[node name="EndScreen" parent="UILayer" unique_id=2052590696 instance=ExtResource("5")]
+unique_name_in_owner = true

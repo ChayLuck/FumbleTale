@@ -1,0 +1,176 @@
+{
+  "group_id": "5bb6815d-497c-48b7-b56a-20831c882a22",
+  "states": [
+    {
+      "character": {
+        "id": "601407e5-ae5f-480e-a0c6-adbbd24223a1",
+        "name": "Idle",
+        "prompt": "Teenage girl with long straight ice-blue hair reaching past her shoulders, cold pale ice-blue eyes, standard Japanese school sailor uniform (navy blue top with sailor collar, pleated navy skirt), small stature, standing upright, arms resting at her sides, calm distant expression. Cool black boots with heels.",
+        "size": {
+          "width": 128,
+          "height": 128
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "side",
+        "created_at": "2026-09-14T16:42:13.783692+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {
+          "Running": {
+            "east": [
+              "Idle/animations/Running/east/frame_000.png",
+              "Idle/animations/Running/east/frame_001.png",
+              "Idle/animations/Running/east/frame_002.png",
+              "Idle/animations/Running/east/frame_003.png",
+              "Idle/animations/Running/east/frame_004.png",
+              "Idle/animations/Running/east/frame_005.png",
+              "Idle/animations/Running/east/frame_006.png",
+              "Idle/animations/Running/east/frame_007.png"
+            ]
+          },
+          "Walking": {
+            "east": [
+              "Idle/animations/Walking/east/frame_000.png",
+              "Idle/animations/Walking/east/frame_001.png",
+              "Idle/animations/Walking/east/frame_002.png",
+              "Idle/animations/Walking/east/frame_003.png",
+              "Idle/animations/Walking/east/frame_004.png",
+              "Idle/animations/Walking/east/frame_005.png",
+              "Idle/animations/Walking/east/frame_006.png",
+              "Idle/animations/Walking/east/frame_007.png"
+            ],
+            "west": [
+              "Idle/animations/Walking/west/frame_000.png",
+              "Idle/animations/Walking/west/frame_001.png",
+              "Idle/animations/Walking/west/frame_002.png",
+              "Idle/animations/Walking/west/frame_003.png",
+              "Idle/animations/Walking/west/frame_004.png",
+              "Idle/animations/Walking/west/frame_005.png",
+              "Idle/animations/Walking/west/frame_006.png",
+              "Idle/animations/Walking/west/frame_007.png"
+            ]
+          },
+          "The_character_stands_still_with_a_gentle_rhythmic": {
+            "south": [
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic/south/frame_000.png",
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic/south/frame_001.png",
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic/south/frame_002.png",
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic/south/frame_003.png",
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic/south/frame_004.png",
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic/south/frame_005.png",
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic/south/frame_006.png",
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic/south/frame_007.png",
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic/south/frame_008.png"
+            ]
+          },
+          "She_is_playing_with_her_hair_in_never_ending_idle": {
+            "south": [
+              "Idle/animations/She_is_playing_with_her_hair_in_never_ending_idle/south/frame_000.png",
+              "Idle/animations/She_is_playing_with_her_hair_in_never_ending_idle/south/frame_001.png",
+              "Idle/animations/She_is_playing_with_her_hair_in_never_ending_idle/south/frame_002.png",
+              "Idle/animations/She_is_playing_with_her_hair_in_never_ending_idle/south/frame_003.png",
+              "Idle/animations/She_is_playing_with_her_hair_in_never_ending_idle/south/frame_004.png",
+              "Idle/animations/She_is_playing_with_her_hair_in_never_ending_idle/south/frame_005.png",
+              "Idle/animations/She_is_playing_with_her_hair_in_never_ending_idle/south/frame_006.png",
+              "Idle/animations/She_is_playing_with_her_hair_in_never_ending_idle/south/frame_007.png"
+            ]
+          },
+          "idle_breathing": {
+            "east": [
+              "Idle/animations/idle_breathing/east/frame_000.png",
+              "Idle/animations/idle_breathing/east/frame_001.png",
+              "Idle/animations/idle_breathing/east/frame_002.png",
+              "Idle/animations/idle_breathing/east/frame_003.png",
+              "Idle/animations/idle_breathing/east/frame_004.png",
+              "Idle/animations/idle_breathing/east/frame_005.png",
+              "Idle/animations/idle_breathing/east/frame_006.png",
+              "Idle/animations/idle_breathing/east/frame_007.png"
+            ],
+            "south": [
+              "Idle/animations/idle_breathing/south/frame_000.png",
+              "Idle/animations/idle_breathing/south/frame_001.png",
+              "Idle/animations/idle_breathing/south/frame_002.png",
+              "Idle/animations/idle_breathing/south/frame_003.png",
+              "Idle/animations/idle_breathing/south/frame_004.png",
+              "Idle/animations/idle_breathing/south/frame_005.png",
+              "Idle/animations/idle_breathing/south/frame_006.png",
+              "Idle/animations/idle_breathing/south/frame_007.png"
+            ],
+            "west": [
+              "Idle/animations/idle_breathing/west/frame_000.png",
+              "Idle/animations/idle_breathing/west/frame_001.png",
+              "Idle/animations/idle_breathing/west/frame_002.png",
+              "Idle/animations/idle_breathing/west/frame_003.png",
+              "Idle/animations/idle_breathing/west/frame_004.png",
+              "Idle/animations/idle_breathing/west/frame_005.png",
+              "Idle/animations/idle_breathing/west/frame_006.png",
+              "Idle/animations/idle_breathing/west/frame_007.png"
+            ]
+          },
+          "She_is_twirling_her_hair_playin_in_a_never_ending": {
+            "south": [
+              "Idle/animations/She_is_twirling_her_hair_playin_in_a_never_ending/south/frame_000.png",
+              "Idle/animations/She_is_twirling_her_hair_playin_in_a_never_ending/south/frame_001.png",
+              "Idle/animations/She_is_twirling_her_hair_playin_in_a_never_ending/south/frame_002.png",
+              "Idle/animations/She_is_twirling_her_hair_playin_in_a_never_ending/south/frame_003.png",
+              "Idle/animations/She_is_twirling_her_hair_playin_in_a_never_ending/south/frame_004.png",
+              "Idle/animations/She_is_twirling_her_hair_playin_in_a_never_ending/south/frame_005.png",
+              "Idle/animations/She_is_twirling_her_hair_playin_in_a_never_ending/south/frame_006.png",
+              "Idle/animations/She_is_twirling_her_hair_playin_in_a_never_ending/south/frame_007.png"
+            ]
+          },
+          "The_character_stands_still_with_a_gentle_rhythmic-de837194": {
+            "south": [
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic-de837194/south/frame_000.png",
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic-de837194/south/frame_001.png",
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic-de837194/south/frame_002.png",
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic-de837194/south/frame_003.png",
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic-de837194/south/frame_004.png",
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic-de837194/south/frame_005.png",
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic-de837194/south/frame_006.png",
+              "Idle/animations/The_character_stands_still_with_a_gentle_rhythmic-de837194/south/frame_007.png"
+            ]
+          },
+          "Jumping": {
+            "east": [
+              "Idle/animations/Jumping/east/frame_000.png",
+              "Idle/animations/Jumping/east/frame_001.png",
+              "Idle/animations/Jumping/east/frame_002.png",
+              "Idle/animations/Jumping/east/frame_003.png",
+              "Idle/animations/Jumping/east/frame_004.png",
+              "Idle/animations/Jumping/east/frame_005.png",
+              "Idle/animations/Jumping/east/frame_006.png",
+              "Idle/animations/Jumping/east/frame_007.png",
+              "Idle/animations/Jumping/east/frame_008.png"
+            ],
+            "west": [
+              "Idle/animations/Jumping/west/frame_000.png",
+              "Idle/animations/Jumping/west/frame_001.png",
+              "Idle/animations/Jumping/west/frame_002.png",
+              "Idle/animations/Jumping/west/frame_003.png",
+              "Idle/animations/Jumping/west/frame_004.png",
+              "Idle/animations/Jumping/west/frame_005.png",
+              "Idle/animations/Jumping/west/frame_006.png",
+              "Idle/animations/Jumping/west/frame_007.png",
+              "Idle/animations/Jumping/west/frame_008.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-09-15T12:58:04.090638"
+}

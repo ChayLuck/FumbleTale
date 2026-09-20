@@ -1,0 +1,43 @@
+{
+	"nodes": [
+		{
+			"id": "intro",
+			"lines": [
+				"Hisame leads you through the ruined doorway and out of the wind.",
+				"\"We rest here tonight,\" she says, nodding toward the cold hearth."
+			]
+		},
+		{
+			"id": "fireplace_line",
+			"lines": [
+				"The fireplace sits cold and dark, logs stacked and waiting."
+			],
+			"next": "light_choice"
+		},
+		{
+			"id": "light_choice",
+			"options": [
+				{
+					"label": "Light the fire",
+					"next": "fire_lit"
+				}
+			]
+		},
+		{
+			"event": "fire_lit",
+			"id": "fire_lit",
+			"lines": [
+				"The logs catch, and warm light spreads across the ruined walls."
+			],
+			"next": "hisame_line"
+		},
+		{
+			"event": "show_hisame_bust",
+			"id": "hisame_line",
+			"lines": [
+				"\"Now it's time to explain what's going on\" Hisame says."
+			]
+		}
+	],
+	"start_id": "intro"
+}

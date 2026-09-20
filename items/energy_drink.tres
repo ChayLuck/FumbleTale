@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://core/item_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+item_name = "Energy Drink"
+description = "Gets the heart racing. Heals 20 HP."
+heal_amount = 20

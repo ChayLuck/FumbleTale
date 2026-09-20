@@ -1,0 +1,426 @@
+{
+	"nodes": [
+		{
+			"event": "say_aphrodite",
+			"id": "greeting",
+			"lines": [
+				"Ah... there you are. Welcome, darling.",
+				"Now then — how are you? Are you well?",
+				"I do hope your spirits have been high so far."
+			],
+			"next": "beauty_choice"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "greeting_repeat",
+			"lines": [
+				"Aphrodite hums to herself, waiting."
+			]
+		},
+		{
+			"id": "beauty_choice",
+			"options": [
+				{
+					"label": "You're beautiful",
+					"next": "beauty_yes"
+				},
+				{
+					"label": "You're not bad",
+					"next": "beauty_no"
+				}
+			]
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "beauty_yes",
+			"lines": [
+				"Well, of course. I'm the goddess of beauty."
+			],
+			"next": "what_makes_beautiful"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "beauty_no",
+			"lines": [
+				"Hm. So not even a goddess of beauty is enough for you..."
+			],
+			"next": "what_makes_beautiful"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "what_makes_beautiful",
+			"lines": [
+				"But tell me — what do you think makes a woman beautiful?"
+			],
+			"next": "no_answer_choice"
+		},
+		{
+			"id": "no_answer_choice",
+			"options": [
+				{
+					"label": "...",
+					"next": "no_answer_reply"
+				}
+			]
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "no_answer_reply",
+			"lines": [
+				"Ah, never mind — it's too early for silly questions like that. You're not here for this...",
+				"I mean, actually, that's not even— ...ugh, I'm bored.",
+				"I wanted to send you on a task. Are you ready?"
+			],
+			"next": "ready_choice"
+		},
+		{
+			"id": "ready_choice",
+			"options": [
+				{
+					"label": "No",
+					"next": "ready_no"
+				},
+				{
+					"label": "Yes",
+					"next": "task_offer"
+				}
+			]
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "ready_no",
+			"lines": [
+				"What do you mean, no?"
+			],
+			"next": "no_followup_choice"
+		},
+		{
+			"id": "no_followup_choice",
+			"options": [
+				{
+					"label": "I'm not ready",
+					"next": "not_ready_reply"
+				},
+				{
+					"label": "I changed my mind — I do feel ready",
+					"next": "task_offer"
+				}
+			]
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "not_ready_reply",
+			"lines": [
+				"Whether you're ready didn't really matter. I'm a goddess — I asked to be polite.",
+				"If I want something, you'll do it."
+			],
+			"next": "polite_choice"
+		},
+		{
+			"id": "polite_choice",
+			"options": [
+				{
+					"label": "You're right, sorry — I'm ready",
+					"next": "task_offer"
+				},
+				{
+					"label": "Then why even ask?",
+					"next": "why_ask_reply"
+				}
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "why_ask_reply",
+			"lines": [
+				"Then why even ask? I didn't come here to do tasks — I don't even know what this is about yet."
+			],
+			"next": "ellipsis_fine"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "ellipsis_fine",
+			"lines": [
+				"...",
+				"Fine."
+			],
+			"next": "fine_question"
+		},
+		{
+			"event": "say_player",
+			"id": "fine_question",
+			"lines": [
+				"Fine...?"
+			],
+			"next": "fine_answer"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "fine_answer",
+			"lines": [
+				"Fine. Okay."
+			],
+			"next": "what_do_i_do"
+		},
+		{
+			"event": "say_player",
+			"id": "what_do_i_do",
+			"lines": [
+				"Well — okay then. So what am I supposed to do?"
+			],
+			"next": "never_mind_ending"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "never_mind_ending",
+			"lines": [
+				"Why are you asking me? Do whatever you want.",
+				"You're right — springing a task on you out of nowhere was cliché and unpleasant. Make yourself at home."
+			],
+			"next": "thanks_ending"
+		},
+		{
+			"event": "say_player",
+			"id": "thanks_ending",
+			"lines": [
+				"Thanks for understanding."
+			]
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "task_offer",
+			"lines": [
+				"Lovely. Just as it should be. Do you want to hear your task?"
+			],
+			"next": "task_tease"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "task_tease",
+			"lines": [
+				"Hmmm, let's see, let's see... what could this task you wanted so badly even be?",
+				"Alright, I'll tell you: find true love."
+			],
+			"next": "task_what"
+		},
+		{
+			"event": "say_player",
+			"id": "task_what",
+			"lines": [
+				"WHAT?"
+			],
+			"next": "task_whats_wrong"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "task_whats_wrong",
+			"lines": [
+				"What's wrong?"
+			],
+			"next": "task_protest"
+		},
+		{
+			"event": "say_player",
+			"id": "task_protest",
+			"lines": [
+				"Even if there is such a thing as true love, finding it isn't as easy as... it's not like going to the store and grabbing 3 eggs, it's kind of a—"
+			],
+			"next": "task_shush"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "task_shush",
+			"lines": [
+				"Shhh — calm down, tiny one. I never said this would be an easy task.",
+				"Besides, what were you expecting? The goddess of love telling you to go grab a carrot???",
+				"Hmm... wait a second. You actually have 2 tasks now, sweetheart — the carrot craving hit."
+			],
+			"next": "task_im_out"
+		},
+		{
+			"event": "say_player",
+			"id": "task_im_out",
+			"lines": [
+				"This has to be a joke. I'm out."
+			],
+			"next": "task_permanently"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "task_permanently",
+			"lines": [
+				"If this disrespect keeps up, yes — you'll be out. Permanently."
+			],
+			"next": "task_silence_1"
+		},
+		{
+			"event": "say_player",
+			"id": "task_silence_1",
+			"lines": [
+				"..."
+			],
+			"next": "task_silence_2"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "task_silence_2",
+			"lines": [
+				"..."
+			],
+			"next": "task_no_choice"
+		},
+		{
+			"event": "say_player",
+			"id": "task_no_choice",
+			"lines": [
+				"...so I don't really have a choice, then."
+			],
+			"next": "task_you_begged"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "task_you_begged",
+			"lines": [
+				"Well, it's a task — you need to do it. Besides, you wanted this so badly, you begged for it."
+			],
+			"next": "task_silence_3"
+		},
+		{
+			"event": "say_player",
+			"id": "task_silence_3",
+			"lines": [
+				"..."
+			],
+			"next": "task_gods_fun"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "task_gods_fun",
+			"lines": [
+				"Come on, tiny one, we gods need to have fun too. Besides, what's the worst that could happen?"
+			],
+			"next": "task_whats_in_it"
+		},
+		{
+			"event": "say_player",
+			"id": "task_whats_in_it",
+			"lines": [
+				"Is there something in it for me, at least?"
+			],
+			"next": "task_no_greater_reward"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "task_no_greater_reward",
+			"lines": [
+				"There's no greater reward than love, child. Besides, the adventures along the road to love are the stuff of legend."
+			],
+			"next": "task_how_much_time"
+		},
+		{
+			"event": "say_player",
+			"id": "task_how_much_time",
+			"lines": [
+				"Okay — how much time do I have, where do I even find it, I mean what am I supposed to d—"
+			],
+			"next": "task_calm_down"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "task_calm_down",
+			"lines": [
+				"First — calm down. Time: hmm, until I get bored of waiting. Where you'll find it is up to you, but don't worry, I'll start you off somewhere. I'll be watching."
+			],
+			"next": "task_ill_get_going"
+		},
+		{
+			"event": "say_player",
+			"id": "task_ill_get_going",
+			"lines": [
+				"...Okay. I'll get going, then."
+			],
+			"next": "task_reminders"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "task_reminders",
+			"lines": [
+				"Before you go, let me remind you of a few things.",
+				"Run, and you die. Annoy me, or refuse to carry out your task, and I'll make it worse than death for you. Understood, love?"
+			],
+			"next": "task_silence_4"
+		},
+		{
+			"event": "say_player",
+			"id": "task_silence_4",
+			"lines": [
+				"..."
+			],
+			"next": "task_good_carrot"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "task_good_carrot",
+			"lines": [
+				"Good. Now — before love comes the carrot, since the goddess had a craving. Good luck!"
+			],
+			"next": "task_wait"
+		},
+		{
+			"event": "say_player",
+			"id": "task_wait",
+			"lines": [
+				"Wait, right no—"
+			],
+			"next": "task_forest_teleport"
+		},
+		{
+			"event": "say_player",
+			"id": "task_forest_teleport",
+			"lines": [
+				"Aphrodite snaps her fingers — the room dissolves, and you're standing in a forest."
+			]
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "carrot_delivered",
+			"lines": [
+				"Ohh — you actually brought it. Thank you, sweetie.",
+				"Aphrodite takes a bite of the carrot, humming contentedly."
+			],
+			"next": "carrot_delivered_end"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "carrot_delivered_end",
+			"lines": [
+				"Mm. Delicious. Now then — let's see how you do with the rest."
+			]
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "followup_start",
+			"lines": [
+				"If you get bored, you can go to the room next door."
+			],
+			"next": "followup_choice"
+		},
+		{
+			"id": "followup_choice",
+			"options": [
+				{
+					"label": "Why would you think I'm bored? I'm having a blast on my own.",
+					"next": "followup_end"
+				},
+				{
+					"label": "Okay, thanks.",
+					"next": "followup_end"
+				}
+			]
+		},
+		{
+			"id": "followup_end"
+		}
+	],
+	"start_id": "greeting"
+}

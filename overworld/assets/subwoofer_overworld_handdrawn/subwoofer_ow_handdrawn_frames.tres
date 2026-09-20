@@ -1,0 +1,77 @@
+[gd_resource type="SpriteFrames" load_steps=9 format=3]
+
+[ext_resource type="Texture2D" path="res://HandDrawn/Speaker_boss/rotations/south.png" id="1"]
+[ext_resource type="Texture2D" path="res://HandDrawn/Speaker_boss/rotations/north.png" id="2"]
+[ext_resource type="Texture2D" path="res://HandDrawn/Speaker_boss/rotations/east.png" id="3"]
+[ext_resource type="Texture2D" path="res://HandDrawn/Speaker_boss/rotations/west.png" id="4"]
+[ext_resource type="Texture2D" path="res://HandDrawn/Speaker_boss/rotations/south-east.png" id="5"]
+[ext_resource type="Texture2D" path="res://HandDrawn/Speaker_boss/rotations/south-west.png" id="6"]
+[ext_resource type="Texture2D" path="res://HandDrawn/Speaker_boss/rotations/north-east.png" id="7"]
+[ext_resource type="Texture2D" path="res://HandDrawn/Speaker_boss/rotations/north-west.png" id="8"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1")
+}],
+"loop": true,
+"name": &"idle_south",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2")
+}],
+"loop": true,
+"name": &"idle_north",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3")
+}],
+"loop": true,
+"name": &"idle_east",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4")
+}],
+"loop": true,
+"name": &"idle_west",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5")
+}],
+"loop": true,
+"name": &"idle_south_east",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6")
+}],
+"loop": true,
+"name": &"idle_south_west",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7")
+}],
+"loop": true,
+"name": &"idle_north_east",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8")
+}],
+"loop": true,
+"name": &"idle_north_west",
+"speed": 1.0
+}]

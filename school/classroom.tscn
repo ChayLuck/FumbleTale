@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://q425xuktq84m"]
+
+[ext_resource type="Script" uid="uid://ibyvyghhtoc4" path="res://school/classroom.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cbrl2pv0cmcs0" path="res://school/assets/classroom_floor.png" id="2"]
+[ext_resource type="SpriteFrames" path="res://school/assets/hisame_frames.tres" id="3"]
+[ext_resource type="PackedScene" path="res://components/dialog_box.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://components/encounter_menu.tscn" id="5"]
+[ext_resource type="SpriteFrames" path="res://school/assets/nazuna_frames.tres" id="6"]
+[ext_resource type="Script" uid="uid://3e6jw35ixrve" path="res://school/name_label.gd" id="7"]
+[ext_resource type="SpriteFrames" path="res://encounters/cafe_girl/girl_sweet_frames.tres" id="8"]
+
+[node name="Classroom" type="Node2D" unique_id=49409329]
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="." unique_id=578923590]
+offset_right = 640.0
+offset_bottom = 480.0
+color = Color(0.05, 0.05, 0.08, 1)
+
+[node name="ClassroomImage" type="Sprite2D" parent="." unique_id=196388448]
+position = Vector2(320, 240)
+texture = ExtResource("2")
+
+[node name="HisameSprite" type="AnimatedSprite2D" parent="." unique_id=2070750448]
+unique_name_in_owner = true
+position = Vector2(409, 217)
+scale = Vector2(1.6, 1.6)
+sprite_frames = ExtResource("3")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="NazunaSprite" type="AnimatedSprite2D" parent="." unique_id=183092490]
+unique_name_in_owner = true
+position = Vector2(216, 234)
+scale = Vector2(1.5, 1.5)
+sprite_frames = ExtResource("6")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CherrySprite" type="AnimatedSprite2D" parent="." unique_id=455729022]
+unique_name_in_owner = true
+position = Vector2(321, 233)
+scale = Vector2(1.6, 1.6)
+sprite_frames = ExtResource("8")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="NameLabel" type="Node2D" parent="." unique_id=2056292155]
+unique_name_in_owner = true
+script = ExtResource("7")
+
+[node name="DialogBox" parent="." unique_id=1506954577 instance=ExtResource("4")]
+unique_name_in_owner = true
+
+[node name="EncounterMenu" parent="." unique_id=957982482 instance=ExtResource("5")]
+unique_name_in_owner = true

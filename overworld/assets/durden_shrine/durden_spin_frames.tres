@@ -1,0 +1,42 @@
+[gd_resource type="SpriteFrames" load_steps=9 format=3]
+
+[ext_resource type="Texture2D" path="res://HandDrawn/Durden/south.png" id="1"]
+[ext_resource type="Texture2D" path="res://HandDrawn/Durden/south-east.png" id="2"]
+[ext_resource type="Texture2D" path="res://HandDrawn/Durden/east.png" id="3"]
+[ext_resource type="Texture2D" path="res://HandDrawn/Durden/north-east.png" id="4"]
+[ext_resource type="Texture2D" path="res://HandDrawn/Durden/north.png" id="5"]
+[ext_resource type="Texture2D" path="res://HandDrawn/Durden/north-west.png" id="6"]
+[ext_resource type="Texture2D" path="res://HandDrawn/Durden/west.png" id="7"]
+[ext_resource type="Texture2D" path="res://HandDrawn/Durden/south-west.png" id="8"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8")
+}],
+"loop": true,
+"name": &"spin",
+"speed": 4.0
+}]

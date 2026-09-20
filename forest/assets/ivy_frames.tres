@@ -1,0 +1,169 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_attack_0.png" id="1_7r6ag"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_attack_1.png" id="2_70308"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_attack_2.png" id="3_ssu0n"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_attack_3.png" id="4_iruqv"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_attack_4.png" id="5_fimdl"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_attack_5.png" id="6_q7edt"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_attack_6.png" id="7_7lh3t"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_attack_7.png" id="8_ym2ri"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_attack_8.png" id="9_dabgj"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_hurt_0.png" id="10_47kya"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_hurt_1.png" id="11_nlrvi"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_hurt_2.png" id="12_8l0qp"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_hurt_3.png" id="13_nw2uj"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_hurt_4.png" id="14_sv4ki"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_hurt_5.png" id="15_py2uk"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_hurt_6.png" id="16_c8yqb"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_hurt_7.png" id="17_hpkrk"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_hurt_8.png" id="18_tfo1d"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_idle_0.png" id="19_kxnnr"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_idle_1.png" id="20_eadjy"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_idle_2.png" id="21_23j5l"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_idle_3.png" id="22_nedcx"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_idle_4.png" id="23_wnewd"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_idle_5.png" id="24_h0xnn"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_idle_6.png" id="25_s2oxa"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_idle_7.png" id="26_00x83"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_idle_8.png" id="27_dt4nh"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_laugh_0.png" id="28_0ky4m"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_laugh_1.png" id="29_hmiwm"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_laugh_2.png" id="30_0tov6"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_laugh_3.png" id="31_ixb56"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_laugh_4.png" id="32_u5g5t"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_laugh_5.png" id="33_lh1ax"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_laugh_6.png" id="34_gu6tg"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_laugh_7.png" id="35_x2adb"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_laugh_8.png" id="36_3cc05"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7r6ag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_70308")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ssu0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_iruqv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_fimdl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_q7edt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_7lh3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ym2ri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_dabgj")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_47kya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_nlrvi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_8l0qp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_nw2uj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_sv4ki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_py2uk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_c8yqb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_hpkrk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_tfo1d")
+}],
+"loop": 0,
+"name": &"hurt",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_kxnnr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_eadjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_23j5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_nedcx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_wnewd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_h0xnn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_s2oxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_00x83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_dt4nh")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_0ky4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_hmiwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_0tov6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_ixb56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_u5g5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_lh1ax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_gu6tg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_x2adb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_3cc05")
+}],
+"loop": 0,
+"name": &"laugh",
+"speed": 9.0
+}]

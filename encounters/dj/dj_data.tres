@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EncounterData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://core/encounter_data.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://jungle/assets/dj_portrait_frames.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+enemy_name = "The DJ"
+enemy_max_hp = 30
+player_max_hp = 20
+intro_lines = Array[String](["She raises both hands, and the bassline drops.", "Notes start raining in, right on the beat — dodge them, or punch the gold ones back."])
+menu_labels = Array[String](["Strike", "Item"])
+theme_color = Color(0.85, 0.95, 0.2, 1)
+enemy_frames = ExtResource("2")
+return_scene = "res://cafe/goddess_room.tscn"

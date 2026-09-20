@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3 uid="uid://wmcvfexeimp6"]
+
+[ext_resource type="Script" uid="uid://idfhx4inhfg7" path="res://core/encounter_data.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://encounters/melodic_subwoofer/boss_idle_frames.tres" id="2"]
+[ext_resource type="Script" uid="uid://cl7h862pkc17c" path="res://core/dialogue_choice.gd" id="3"]
+
+[sub_resource type="Resource" id="DialogueChoice_who"]
+script = ExtResource("3")
+question = "Who are you?"
+response_lines = Array[String](["I am the lord of the Sound Dimension.", "Every vibration, every noise, answers to me."])
+
+[sub_resource type="Resource" id="DialogueChoice_why"]
+script = ExtResource("3")
+question = "Why are you here?"
+response_lines = Array[String](["I guard this passage, until someone can best me.", "Beat me, and you'll finally control this dimension's volume."])
+
+[resource]
+script = ExtResource("1")
+enemy_name = "The Melodic Subwoofer"
+enemy_max_hp = 40
+intro_lines = Array[String](["A hulking speaker cabinet rolls into your path...", "THE MELODIC SUBWOOFER wants to test your rhythm!"])
+intro_choices = Array[ExtResource("3")]([SubResource("DialogueChoice_who"), SubResource("DialogueChoice_why")])
+menu_labels = Array[String](["Strike", "Tune", "Amplify", "Harmonize"])
+theme_color = Color(0.95, 0.55, 0.15, 1)
+enemy_frames = ExtResource("2")

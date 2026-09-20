@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3 uid="uid://cugsu14r132xw"]
+
+[ext_resource type="Script" uid="uid://idfhx4inhfg7" path="res://core/encounter_data.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://encounters/cathode_cyclops/boss_idle_frames.tres" id="2"]
+[ext_resource type="Script" uid="uid://cl7h862pkc17c" path="res://core/dialogue_choice.gd" id="3"]
+
+[sub_resource type="Resource" id="DialogueChoice_who"]
+script = ExtResource("3")
+question = "Who are you?"
+response_lines = Array[String](["I am the single eye of the Video Dimension.", "No pixel, no frame, escapes my sight."])
+
+[sub_resource type="Resource" id="DialogueChoice_why"]
+script = ExtResource("3")
+question = "Why are you here?"
+response_lines = Array[String](["I watch over these screens, until someone can best me.", "Beat me, and you'll finally control this dimension's display."])
+
+[resource]
+script = ExtResource("1")
+enemy_name = "The Cathode Cyclops"
+enemy_max_hp = 40
+intro_lines = Array[String](["A wall of dead televisions flickers to life...", "THE CATHODE CYCLOPS locks its single eye onto you!"])
+intro_choices = Array[ExtResource("3")]([SubResource("DialogueChoice_who"), SubResource("DialogueChoice_why")])
+menu_labels = Array[String](["Smash", "Adjust", "Amplify", "Calibrate"])
+theme_color = Color(0.35, 0.9, 0.75, 1)
+enemy_frames = ExtResource("2")

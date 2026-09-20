@@ -1,0 +1,79 @@
+[gd_resource type="SpriteFrames" load_steps=17 format=3]
+
+[ext_resource type="Texture2D" path="res://encounters/mushroom_girl/assets/anim/mushroom_enemy_walk_0.png" id="1_w0"]
+[ext_resource type="Texture2D" path="res://encounters/mushroom_girl/assets/anim/mushroom_enemy_walk_1.png" id="2_w1"]
+[ext_resource type="Texture2D" path="res://encounters/mushroom_girl/assets/anim/mushroom_enemy_walk_2.png" id="3_w2"]
+[ext_resource type="Texture2D" path="res://encounters/mushroom_girl/assets/anim/mushroom_enemy_walk_3.png" id="4_w3"]
+[ext_resource type="Texture2D" path="res://encounters/mushroom_girl/assets/anim/mushroom_enemy_walk_4.png" id="5_w4"]
+[ext_resource type="Texture2D" path="res://encounters/mushroom_girl/assets/anim/mushroom_enemy_walk_5.png" id="6_w5"]
+[ext_resource type="Texture2D" path="res://encounters/mushroom_girl/assets/anim/mushroom_enemy_walk_6.png" id="7_w6"]
+[ext_resource type="Texture2D" path="res://encounters/mushroom_girl/assets/anim/mushroom_enemy_walk_7.png" id="8_w7"]
+[ext_resource type="Texture2D" path="res://encounters/mushroom_girl/assets/anim/mushroom_enemy_walk_8.png" id="9_w8"]
+[ext_resource type="Texture2D" path="res://encounters/mushroom_girl/assets/anim/mushroom_enemy_die_0.png" id="10_d0"]
+[ext_resource type="Texture2D" path="res://encounters/mushroom_girl/assets/anim/mushroom_enemy_die_1.png" id="11_d1"]
+[ext_resource type="Texture2D" path="res://encounters/mushroom_girl/assets/anim/mushroom_enemy_die_2.png" id="12_d2"]
+[ext_resource type="Texture2D" path="res://encounters/mushroom_girl/assets/anim/mushroom_enemy_die_3.png" id="13_d3"]
+[ext_resource type="Texture2D" path="res://encounters/mushroom_girl/assets/anim/mushroom_enemy_die_4.png" id="14_d4"]
+[ext_resource type="Texture2D" path="res://encounters/mushroom_girl/assets/anim/mushroom_enemy_die_5.png" id="15_d5"]
+[ext_resource type="Texture2D" path="res://encounters/mushroom_girl/assets/anim/mushroom_enemy_die_6.png" id="16_d6"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_w0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_w1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_w2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_w3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_w4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_w5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_w6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_w7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_w8")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_d0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_d1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_d2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_d4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_d5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_d6")
+}],
+"loop": false,
+"name": &"die",
+"speed": 10.0
+}]

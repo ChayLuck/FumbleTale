@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d4lfoyhw3tu44"
+path="res://.godot/imported/FumbleTale Beat4.2 90 BPM Loop.wav-ae5da461af3c4ca840cf479ac488f541.sample"
+
+[deps]
+
+source_file="res://Musics/FumbleTale Beat4.2 90 BPM Loop.wav"
+dest_files=["res://.godot/imported/FumbleTale Beat4.2 90 BPM Loop.wav-ae5da461af3c4ca840cf479ac488f541.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=1
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

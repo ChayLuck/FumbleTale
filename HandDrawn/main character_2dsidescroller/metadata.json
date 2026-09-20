@@ -1,0 +1,137 @@
+{
+  "group_id": "f7a4cb25-88f5-46cf-be8e-ea36bdb158a1",
+  "states": [
+    {
+      "character": {
+        "id": "c56a05ab-cd38-456a-90cf-94a36b44270c",
+        "name": "Idle",
+        "prompt": "A full-body portrait of a young boy facing south, featuring striking piercing blue eyes and neatly styled brown hair. He is dressed in a crisp white button-down shirt adorned with subtle, precise navy blue horizontal stripes and tailored deep blue trousers. His stance is relaxed but upright, with his arms resting naturally at his sides. The outfit displays realistic fabric folds and defined textures, with a clean, polished appearance throughout, presented on a solid color background. He has dark brown boots.",
+        "size": {
+          "width": 128,
+          "height": 128
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "side",
+        "created_at": "2026-09-14T17:02:36.070753+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {
+          "Idle": {
+            "east": [
+              "Idle/animations/Idle/east/frame_000.png",
+              "Idle/animations/Idle/east/frame_001.png",
+              "Idle/animations/Idle/east/frame_002.png",
+              "Idle/animations/Idle/east/frame_003.png",
+              "Idle/animations/Idle/east/frame_004.png",
+              "Idle/animations/Idle/east/frame_005.png",
+              "Idle/animations/Idle/east/frame_006.png",
+              "Idle/animations/Idle/east/frame_007.png"
+            ],
+            "west": [
+              "Idle/animations/Idle/west/frame_000.png",
+              "Idle/animations/Idle/west/frame_001.png",
+              "Idle/animations/Idle/west/frame_002.png",
+              "Idle/animations/Idle/west/frame_003.png",
+              "Idle/animations/Idle/west/frame_004.png",
+              "Idle/animations/Idle/west/frame_005.png",
+              "Idle/animations/Idle/west/frame_006.png",
+              "Idle/animations/Idle/west/frame_007.png"
+            ],
+            "south": [
+              "Idle/animations/Idle/south/frame_000.png",
+              "Idle/animations/Idle/south/frame_001.png",
+              "Idle/animations/Idle/south/frame_002.png",
+              "Idle/animations/Idle/south/frame_003.png",
+              "Idle/animations/Idle/south/frame_004.png",
+              "Idle/animations/Idle/south/frame_005.png",
+              "Idle/animations/Idle/south/frame_006.png",
+              "Idle/animations/Idle/south/frame_007.png"
+            ]
+          },
+          "Jumping": {
+            "east": [
+              "Idle/animations/Jumping/east/frame_000.png",
+              "Idle/animations/Jumping/east/frame_001.png",
+              "Idle/animations/Jumping/east/frame_002.png",
+              "Idle/animations/Jumping/east/frame_003.png",
+              "Idle/animations/Jumping/east/frame_004.png",
+              "Idle/animations/Jumping/east/frame_005.png",
+              "Idle/animations/Jumping/east/frame_006.png",
+              "Idle/animations/Jumping/east/frame_007.png",
+              "Idle/animations/Jumping/east/frame_008.png"
+            ],
+            "west": [
+              "Idle/animations/Jumping/west/frame_000.png",
+              "Idle/animations/Jumping/west/frame_001.png",
+              "Idle/animations/Jumping/west/frame_002.png",
+              "Idle/animations/Jumping/west/frame_003.png",
+              "Idle/animations/Jumping/west/frame_004.png",
+              "Idle/animations/Jumping/west/frame_005.png",
+              "Idle/animations/Jumping/west/frame_006.png",
+              "Idle/animations/Jumping/west/frame_007.png",
+              "Idle/animations/Jumping/west/frame_008.png"
+            ]
+          },
+          "Walking": {
+            "west": [
+              "Idle/animations/Walking/west/frame_000.png",
+              "Idle/animations/Walking/west/frame_001.png",
+              "Idle/animations/Walking/west/frame_002.png",
+              "Idle/animations/Walking/west/frame_003.png",
+              "Idle/animations/Walking/west/frame_004.png",
+              "Idle/animations/Walking/west/frame_005.png",
+              "Idle/animations/Walking/west/frame_006.png",
+              "Idle/animations/Walking/west/frame_007.png"
+            ],
+            "east": [
+              "Idle/animations/Walking/east/frame_000.png",
+              "Idle/animations/Walking/east/frame_001.png",
+              "Idle/animations/Walking/east/frame_002.png",
+              "Idle/animations/Walking/east/frame_003.png",
+              "Idle/animations/Walking/east/frame_004.png",
+              "Idle/animations/Walking/east/frame_005.png",
+              "Idle/animations/Walking/east/frame_006.png",
+              "Idle/animations/Walking/east/frame_007.png"
+            ]
+          },
+          "Running": {
+            "east": [
+              "Idle/animations/Running/east/frame_000.png",
+              "Idle/animations/Running/east/frame_001.png",
+              "Idle/animations/Running/east/frame_002.png",
+              "Idle/animations/Running/east/frame_003.png",
+              "Idle/animations/Running/east/frame_004.png",
+              "Idle/animations/Running/east/frame_005.png",
+              "Idle/animations/Running/east/frame_006.png",
+              "Idle/animations/Running/east/frame_007.png"
+            ],
+            "west": [
+              "Idle/animations/Running/west/frame_000.png",
+              "Idle/animations/Running/west/frame_001.png",
+              "Idle/animations/Running/west/frame_002.png",
+              "Idle/animations/Running/west/frame_003.png",
+              "Idle/animations/Running/west/frame_004.png",
+              "Idle/animations/Running/west/frame_005.png",
+              "Idle/animations/Running/west/frame_006.png",
+              "Idle/animations/Running/west/frame_007.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-09-15T12:57:12.960807"
+}

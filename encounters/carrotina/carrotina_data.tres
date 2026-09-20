@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EncounterData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://core/encounter_data.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://overworld/assets/carrotina_portrait/carrotina_battle_frames.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+enemy_name = "Carrotina"
+enemy_max_hp = 40
+player_max_hp = 20
+intro_lines = Array[String](["A carrot-shaped figure blocks the path ahead, roots dug firmly into the ground.", "\"The lord of these lands placed me here,\" she says. \"For him, I won't let you pass. Who are you?\""])
+menu_labels = Array[String](["Strike", "Item"])
+theme_color = Color(0.95, 0.45, 0.2, 1)
+enemy_frames = ExtResource("2")
+return_scene = "res://jungle/jungle.tscn"

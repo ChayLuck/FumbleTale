@@ -1,0 +1,169 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_attack_0.png" id="1_8ora1"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_attack_1.png" id="2_ox6yy"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_attack_2.png" id="3_2nwpw"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_attack_3.png" id="4_1k7xj"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_attack_4.png" id="5_ukoga"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_attack_5.png" id="6_beais"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_attack_6.png" id="7_fqnx6"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_attack_7.png" id="8_tvdwl"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_attack_8.png" id="9_0a0fd"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_hurt_0.png" id="10_vcrtn"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_hurt_1.png" id="11_qdd5q"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_hurt_2.png" id="12_kvy34"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_hurt_3.png" id="13_fo22i"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_hurt_4.png" id="14_6roav"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_hurt_5.png" id="15_py1iv"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_hurt_6.png" id="16_j40g8"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_hurt_7.png" id="17_qu5ee"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_hurt_8.png" id="18_lu0p7"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_idle_0.png" id="19_yghn0"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_idle_1.png" id="20_bwprq"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_idle_2.png" id="21_8k4q4"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_idle_3.png" id="22_o6loa"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_idle_4.png" id="23_vjf57"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_idle_5.png" id="24_2e0w1"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_idle_6.png" id="25_a18ys"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_idle_7.png" id="26_cmlj5"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_idle_8.png" id="27_dfa15"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_laugh_0.png" id="28_b38di"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_laugh_1.png" id="29_n444o"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_laugh_2.png" id="30_bqrhx"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_laugh_3.png" id="31_ghbql"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_laugh_4.png" id="32_s1inm"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_laugh_5.png" id="33_bi8w1"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_laugh_6.png" id="34_vhv35"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_laugh_7.png" id="35_2ai63"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_laugh_8.png" id="36_vvcvg"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8ora1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ox6yy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2nwpw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1k7xj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ukoga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_beais")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fqnx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_tvdwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_0a0fd")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_vcrtn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qdd5q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_kvy34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_fo22i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6roav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_py1iv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_j40g8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_qu5ee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_lu0p7")
+}],
+"loop": 0,
+"name": &"hurt",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_yghn0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_bwprq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8k4q4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_o6loa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_vjf57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_2e0w1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_a18ys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_cmlj5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_dfa15")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_b38di")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_n444o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_bqrhx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_ghbql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_s1inm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_bi8w1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_vhv35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_2ai63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_vvcvg")
+}],
+"loop": 0,
+"name": &"laugh",
+"speed": 9.0
+}]

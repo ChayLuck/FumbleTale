@@ -1,0 +1,135 @@
+[gd_scene format=3 uid="uid://cwvxq4kcanrom"]
+
+[ext_resource type="Script" uid="uid://c7hh8rxk0togo" path="res://menu/main_menu.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://iod1wuhcynbm" path="res://menu/assets/title_bg_dreamy.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://pe68y67a265w" path="res://menu/assets/button.png" id="3"]
+[ext_resource type="Script" uid="uid://m4i4yrs52pwm" path="res://menu/title_overlay.gd" id="4"]
+[ext_resource type="PackedScene" path="res://components/settings_panel.tscn" id="5"]
+[ext_resource type="Texture2D" uid="uid://bswi8rsdqv6lg" path="res://menu/assets/aphrodite_menu_portrait.png" id="6"]
+[ext_resource type="Script" uid="uid://grasp5txpin1" path="res://components/eye_tracker.gd" id="7"]
+[ext_resource type="Texture2D" uid="uid://cq2icb5t8bbny" path="res://menu/assets/settings_icon.png" id="8"]
+
+[node name="MainMenu" type="Node2D" unique_id=1086220741]
+script = ExtResource("1")
+
+[node name="Background" type="TextureRect" parent="." unique_id=958967205]
+offset_right = 640.0
+offset_bottom = 480.0
+texture = ExtResource("2")
+expand_mode = 1
+
+[node name="TitleOverlay" type="Node2D" parent="." unique_id=1135473403]
+script = ExtResource("4")
+
+[node name="AphroditePortrait" type="Sprite2D" parent="." unique_id=209354660]
+position = Vector2(255, 25)
+scale = Vector2(1.75, 1.75)
+texture = ExtResource("6")
+centered = false
+
+[node name="EyeTrackerLeft" type="Node2D" parent="AphroditePortrait" unique_id=2142768004]
+position = Vector2(85, 103)
+script = ExtResource("7")
+
+[node name="EyeTrackerRight" type="Node2D" parent="AphroditePortrait" unique_id=1782180965]
+position = Vector2(138, 103)
+script = ExtResource("7")
+
+[node name="SettingsButton" type="TextureButton" parent="." unique_id=713982639]
+unique_name_in_owner = true
+offset_left = 16.0
+offset_top = 14.0
+offset_right = 58.0
+offset_bottom = 56.0
+focus_neighbor_top = NodePath("../ExitButton")
+focus_neighbor_bottom = NodePath("../ContinueButton")
+focus_next = NodePath("../ContinueButton")
+focus_previous = NodePath("../ExitButton")
+texture_normal = ExtResource("8")
+
+[node name="SettingsLabel" type="Label" parent="SettingsButton" unique_id=2044707057]
+layout_mode = 0
+offset_left = -18.0
+offset_top = 29.0
+offset_right = 52.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(1, 0.9, 0.7, 1)
+theme_override_font_sizes/font_size = 9
+text = "SETTINGS"
+horizontal_alignment = 1
+
+[node name="ContinueButton" type="TextureButton" parent="." unique_id=1335297107]
+unique_name_in_owner = true
+offset_left = 20.0
+offset_top = 315.0
+offset_right = 220.0
+offset_bottom = 365.0
+focus_neighbor_top = NodePath("../SettingsButton")
+focus_neighbor_bottom = NodePath("../NewGameButton")
+focus_next = NodePath("../NewGameButton")
+focus_previous = NodePath("../SettingsButton")
+texture_normal = ExtResource("3")
+
+[node name="ContinueLabel" type="Label" parent="ContinueButton" unique_id=886260286]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 7.0
+offset_top = 5.0
+offset_right = 207.0
+offset_bottom = 55.0
+theme_override_colors/font_color = Color(1, 0.9, 0.7, 1)
+theme_override_font_sizes/font_size = 20
+text = "Continue"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NewGameButton" type="TextureButton" parent="." unique_id=1456529130]
+unique_name_in_owner = true
+offset_left = 20.0
+offset_top = 370.0
+offset_right = 220.0
+offset_bottom = 420.0
+focus_neighbor_top = NodePath("../ContinueButton")
+focus_neighbor_bottom = NodePath("../ExitButton")
+focus_next = NodePath("../ExitButton")
+focus_previous = NodePath("../ContinueButton")
+texture_normal = ExtResource("3")
+
+[node name="NewGameLabel" type="Label" parent="NewGameButton" unique_id=190884625]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 5.0
+offset_right = 211.0
+offset_bottom = 55.0
+theme_override_colors/font_color = Color(1, 0.9, 0.7, 1)
+theme_override_font_sizes/font_size = 16
+text = "Start New Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ExitButton" type="TextureButton" parent="." unique_id=569612843]
+unique_name_in_owner = true
+offset_left = 20.0
+offset_top = 425.0
+offset_right = 220.0
+offset_bottom = 475.0
+focus_neighbor_top = NodePath("../NewGameButton")
+focus_neighbor_bottom = NodePath("../SettingsButton")
+focus_next = NodePath("../SettingsButton")
+focus_previous = NodePath("../NewGameButton")
+texture_normal = ExtResource("3")
+
+[node name="ExitLabel" type="Label" parent="ExitButton" unique_id=1243477158]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 5.0
+offset_right = 209.0
+offset_bottom = 55.0
+theme_override_colors/font_color = Color(1, 0.9, 0.7, 1)
+theme_override_font_sizes/font_size = 20
+text = "Exit"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SettingsPanel" parent="." unique_id=1257204528 instance=ExtResource("5")]
+unique_name_in_owner = true

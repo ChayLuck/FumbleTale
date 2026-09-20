@@ -1,0 +1,46 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_portrait_idle_0.png" id="1_gt8vs"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_portrait_idle_1.png" id="2_tqykg"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_portrait_idle_2.png" id="3_vpjc7"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_portrait_idle_3.png" id="4_kbbj0"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_portrait_idle_4.png" id="5_ljtqs"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_portrait_idle_5.png" id="6_g73bd"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_portrait_idle_6.png" id="7_yuuva"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_portrait_idle_7.png" id="8_uqcy8"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/strawberry_girl_portrait_idle_8.png" id="9_hasvo"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gt8vs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_tqykg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vpjc7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kbbj0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ljtqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_g73bd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_yuuva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_uqcy8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_hasvo")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 9.0
+}]

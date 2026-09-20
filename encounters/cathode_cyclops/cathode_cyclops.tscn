@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://coe0yvvnhjuac"]
+
+[ext_resource type="Script" uid="uid://dk0uvdiiy5lmi" path="res://encounters/cathode_cyclops/cathode_cyclops.gd" id="1"]
+[ext_resource type="Resource" path="res://encounters/cathode_cyclops/cathode_cyclops_data.tres" id="2"]
+[ext_resource type="PackedScene" path="res://components/dialog_box.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://components/encounter_menu.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://components/encounter_arena.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://components/encounter_hud.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://components/bullet_spawner.tscn" id="7"]
+[ext_resource type="PackedScene" path="res://components/end_screen.tscn" id="8"]
+[ext_resource type="PackedScene" path="res://components/inventory_menu.tscn" id="9"]
+[ext_resource type="Script" uid="uid://cu0ix6litowvj" path="res://components/theme_backdrop.gd" id="10"]
+[ext_resource type="PackedScene" path="res://components/ambient_dust.tscn" id="11"]
+
+[node name="CathodeCyclops" type="Node2D" unique_id=900740384]
+script = ExtResource("1")
+data = ExtResource("2")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1856826059]
+unique_name_in_owner = true
+offset_right = 640.0
+offset_bottom = 480.0
+script = ExtResource("10")
+
+[node name="AmbientDustBg" parent="." unique_id=1502058189 instance=ExtResource("11")]
+unique_name_in_owner = true
+
+[node name="EnemySprite" type="AnimatedSprite2D" parent="." unique_id=1816496858]
+unique_name_in_owner = true
+position = Vector2(320, 190)
+scale = Vector2(2.3999999, 2.3999999)
+
+[node name="EncounterHud" parent="." unique_id=380094766 instance=ExtResource("6")]
+unique_name_in_owner = true
+
+[node name="EncounterArena" parent="." unique_id=1570244931 instance=ExtResource("5")]
+unique_name_in_owner = true
+
+[node name="DialogBox" parent="." unique_id=776861622 instance=ExtResource("3")]
+unique_name_in_owner = true
+
+[node name="EncounterMenu" parent="." unique_id=363312850 instance=ExtResource("4")]
+unique_name_in_owner = true
+
+[node name="BulletSpawner" parent="." unique_id=715454286 instance=ExtResource("7")]
+unique_name_in_owner = true
+
+[node name="EndScreen" parent="." unique_id=685556079 instance=ExtResource("8")]
+unique_name_in_owner = true
+
+[node name="InventoryMenu" parent="." unique_id=227273540 instance=ExtResource("9")]
+unique_name_in_owner = true

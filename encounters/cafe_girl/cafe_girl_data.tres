@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3 uid="uid://nulasb24njph"]
+
+[ext_resource type="Script" uid="uid://idfhx4inhfg7" path="res://core/encounter_data.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://encounters/cafe_girl/girl_sweet_frames.tres" id="2"]
+[ext_resource type="Script" uid="uid://cl7h862pkc17c" path="res://core/dialogue_choice.gd" id="3"]
+
+[sub_resource type="Resource" id="DialogueChoice_who"]
+script = ExtResource("3")
+question = "What's your name?"
+response_lines = Array[String](["\"Cherry,\" she says, like it should've been obvious.", "\"Don't wear it out.\""])
+
+[sub_resource type="Resource" id="DialogueChoice_where"]
+script = ExtResource("3")
+question = "What is this place?"
+response_lines = Array[String](["\"My place,\" she shrugs. \"Well. Sort of.\"", "\"You'll understand soon enough.\""])
+
+[resource]
+script = ExtResource("1")
+enemy_name = "Cherry"
+enemy_max_hp = 20
+intro_lines = Array[String](["The cafe smells like vanilla and something sweeter underneath it.", "A girl with long pink hair waves you over to the bar.", "\"Took you long enough,\" she smiles. \"Sit with me?\""])
+intro_choices = Array[ExtResource("3")]([SubResource("DialogueChoice_who"), SubResource("DialogueChoice_where")])
+menu_labels = Array[String](["Flirt", "Talk", "Item", "Mercy"])
+theme_color = Color(0.95, 0.35, 0.55, 1)
+enemy_frames = ExtResource("2")

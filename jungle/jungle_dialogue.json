@@ -1,0 +1,64 @@
+{
+	"start_id": "dj_intro",
+	"nodes": [
+		{
+			"id": "dj_intro",
+			"speaker": "",
+			"lines": [
+				"A distant bassline throbs through the trees, out of place over the water.",
+				"Then you see her, standing on the far shore like she's been waiting."
+			],
+			"next": "dj_reveal"
+		},
+		{
+			"id": "dj_reveal",
+			"speaker": "DJ",
+			"lines": [
+				"\"...another one wandering into my jungle,\" she says, cracking a grin.",
+				"\"Relax. I don't bite before the first drop.\""
+			],
+			"next": "dj_end"
+		},
+		{
+			"id": "dj_end",
+			"speaker": "DJ",
+			"lines": [
+				"\"You want a piece of me? Fine.\"",
+				"\"Let's see if you can actually keep up.\"",
+				"The bassline drops. The real song starts now."
+			]
+		},
+		{
+			"id": "dj_free",
+			"speaker": "DJ",
+			"lines": [
+				"She leans against a tree, humming to herself, headphones low around her neck.",
+				"\"Already had your turn,\" she says. \"Catch your breath.\""
+			]
+		},
+		{
+			"id": "dj_carrot_block",
+			"speaker": "DJ",
+			"lines": [
+				"She holds up a hand before you get close.",
+				"\"Nah, not happening. Not while that ridiculous carrot's still standing over there, staring at everyone.\"",
+				"\"Deal with it first. Then we'll talk.\""
+			]
+		},
+		{
+			"id": "carrotina_intro",
+			"speaker": "",
+			"lines": [
+				"Carrotina eyes you warily, leaves rustling.",
+				"\"Not another step,\" she says, roots tensing."
+			]
+		},
+		{
+			"id": "carrotina_free",
+			"speaker": "",
+			"lines": [
+				"Carrotina's roots lie still. She's long since stopped watching this path."
+			]
+		}
+	]
+}

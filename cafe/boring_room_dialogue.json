@@ -1,0 +1,371 @@
+{
+	"nodes": [
+		{
+			"event": "say_aphrodite",
+			"id": "phone_start",
+			"lines": [
+				"What's wrong? I didn't even remember there was a phone in there."
+			],
+			"next": "phone_start_choice"
+		},
+		{
+			"id": "phone_start_choice",
+			"options": [
+				{
+					"label": "Nothing, sorry — I called by accident, my arm bumped it.",
+					"next": "phone_nothing"
+				},
+				{
+					"label": "What's up",
+					"next": "naber_reply"
+				}
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "phone_nothing",
+			"lines": [
+				"Nothing, sorry — I called by accident. My arm must have bumped it."
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "naber_reply",
+			"lines": [
+				"What's up?"
+			],
+			"next": "naber_aphrodite_reply"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "naber_aphrodite_reply",
+			"lines": [
+				"I'm good, thank you. How about you?"
+			],
+			"next": "naber_choice"
+		},
+		{
+			"id": "naber_choice",
+			"options": [
+				{
+					"label": "I'm great. Yeah.",
+					"next": "great_reply"
+				},
+				{
+					"label": "I'm a little bored, actually",
+					"next": "bored_reply"
+				}
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "great_reply",
+			"lines": [
+				"I'm great. Yeah."
+			],
+			"next": "harika_intro"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "harika_intro",
+			"lines": [
+				"Glad to hear it — I'm great too."
+			],
+			"next": "harika_choice"
+		},
+		{
+			"id": "harika_choice",
+			"options": [
+				{
+					"label": "Actually, I'm even greater.",
+					"next": "harika_escalate_1"
+				},
+				{
+					"label": "Yeah, sounds like you're the greater one.",
+					"next": "harika_b_intro"
+				}
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "harika_escalate_1",
+			"lines": [
+				"Actually, I'm even greater."
+			],
+			"next": "harika_escalate_1b"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "harika_escalate_1b",
+			"lines": [
+				"Great."
+			],
+			"next": "harika_escalate_2"
+		},
+		{
+			"event": "say_player",
+			"id": "harika_escalate_2",
+			"lines": [
+				"Greeaaat."
+			],
+			"next": "harika_escalate_3"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "harika_escalate_3",
+			"lines": [
+				"You're great."
+			],
+			"next": "harika_escalate_4"
+		},
+		{
+			"event": "say_player",
+			"id": "harika_escalate_4",
+			"lines": [
+				"A great one, greatly great, in the land of great.",
+				"There's a click — she's already hung up, laughing."
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "harika_b_intro",
+			"lines": [
+				"Yeah, sounds like you're the greater one."
+			],
+			"next": "harika_b_intro2"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "harika_b_intro2",
+			"lines": [
+				"What are you trying to say?"
+			],
+			"next": "harika_b_choice"
+		},
+		{
+			"id": "harika_b_choice",
+			"options": [
+				{
+					"label": "Nothing — you're great. See you.",
+					"next": "harika_b_end"
+				},
+				{
+					"label": "I'm sure it's greater over there than here.",
+					"next": "harika_b_greater"
+				}
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "harika_b_end",
+			"lines": [
+				"Nothing — you're great. See you."
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "harika_b_greater",
+			"lines": [
+				"I'm sure it's greater over there than here."
+			],
+			"next": "harika_c_intro"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "harika_c_intro",
+			"lines": [
+				"It certainly is."
+			],
+			"next": "harika_c_choice"
+		},
+		{
+			"id": "harika_c_choice",
+			"options": [
+				{
+					"label": "Great, well — have fun then.",
+					"next": "harika_c_end"
+				},
+				{
+					"label": "Can I come too?",
+					"next": "harika_c_come"
+				}
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "harika_c_end",
+			"lines": [
+				"Great, well — have fun then."
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "harika_c_come",
+			"lines": [
+				"Can I come too?"
+			],
+			"next": "gelebilirmiyim_intro"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "gelebilirmiyim_intro",
+			"lines": [
+				"What? I couldn't hear you — my voice cut out for a second."
+			],
+			"next": "gelebilirmiyim_choice"
+		},
+		{
+			"id": "gelebilirmiyim_choice",
+			"options": [
+				{
+					"label": "Never mind, have fun.",
+					"next": "gelebilirmiyim_end"
+				},
+				{
+					"label": "Please — can I come to you too?",
+					"next": "teleport_line"
+				}
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "gelebilirmiyim_end",
+			"lines": [
+				"Never mind — have fun."
+			]
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "teleport_line",
+			"lines": [
+				"Hmm... since you insist, I suppose I could allow it. Come here."
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "bored_reply",
+			"lines": [
+				"I'm a little bored, actually."
+			],
+			"next": "sikildim_intro"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "sikildim_intro",
+			"lines": [
+				"Is that so — that's awful.",
+				"I hope you catch something good on TV."
+			],
+			"next": "sikildim_choice"
+		},
+		{
+			"id": "sikildim_choice",
+			"options": [
+				{
+					"label": "Yeah yeah — ooh, something great just started, gotta go.",
+					"next": "sikildim_end"
+				},
+				{
+					"label": "Actually, I guess I could go on that task after all.",
+					"next": "task_mention_continue"
+				}
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "sikildim_end",
+			"lines": [
+				"Yeah yeah — ooh, something great just started, gotta go."
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "task_mention_continue",
+			"lines": [
+				"Actually, I guess I could go on that task after all."
+			],
+			"next": "task_mention_1"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "task_mention_1",
+			"lines": [
+				"What task?"
+			],
+			"next": "task_mention_2"
+		},
+		{
+			"event": "say_player",
+			"id": "task_mention_2",
+			"lines": [
+				"The one you mentioned — your task."
+			],
+			"next": "task_mention_3"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "task_mention_3",
+			"lines": [
+				"Ohh. Never mind, I lost interest in that."
+			],
+			"next": "task_mention_choice"
+		},
+		{
+			"id": "task_mention_choice",
+			"options": [
+				{
+					"label": "Okay, got it.",
+					"next": "task_mention_end"
+				},
+				{
+					"label": "Please",
+					"next": "please_1_reply"
+				}
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "task_mention_end",
+			"lines": [
+				"Okay, got it."
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "please_1_reply",
+			"lines": [
+				"Please."
+			],
+			"next": "please_1_intro"
+		},
+		{
+			"event": "say_aphrodite",
+			"id": "please_1_intro",
+			"lines": [
+				"What? I couldn't hear you — my voice cut out."
+			],
+			"next": "please_1_choice"
+		},
+		{
+			"id": "please_1_choice",
+			"options": [
+				{
+					"label": "It's nothing, have a good day.",
+					"next": "please_1_end"
+				},
+				{
+					"label": "Please — can I go do the task for you?",
+					"next": "teleport_line"
+				}
+			]
+		},
+		{
+			"event": "say_player",
+			"id": "please_1_end",
+			"lines": [
+				"It's nothing. Have a good day."
+			]
+		}
+	],
+	"start_id": "phone_start"
+}

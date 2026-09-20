@@ -1,0 +1,169 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_attack_0.png" id="1_8grv1"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_attack_1.png" id="2_elkcu"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_attack_2.png" id="3_tdxbt"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_attack_3.png" id="4_l6lbp"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_attack_4.png" id="5_8mefu"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_attack_5.png" id="6_megdp"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_attack_6.png" id="7_emq17"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_attack_7.png" id="8_ma2f4"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_attack_8.png" id="9_k5dlw"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_hurt_0.png" id="10_nxiw3"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_hurt_1.png" id="11_8rher"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_hurt_2.png" id="12_ojebc"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_hurt_3.png" id="13_rlcsg"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_hurt_4.png" id="14_betc6"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_hurt_5.png" id="15_ywa87"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_hurt_6.png" id="16_x7kl5"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_hurt_7.png" id="17_ekdtm"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_hurt_8.png" id="18_8j7ka"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_idle_0.png" id="19_81r5j"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_idle_1.png" id="20_o8wbc"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_idle_2.png" id="21_1gehp"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_idle_3.png" id="22_n0vwg"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_idle_4.png" id="23_8mqyc"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_idle_5.png" id="24_hppnp"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_idle_6.png" id="25_ua3ha"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_idle_7.png" id="26_6vik3"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_idle_8.png" id="27_oeqdo"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_laugh_0.png" id="28_vhtio"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_laugh_1.png" id="29_xgsuj"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_laugh_2.png" id="30_xuqqj"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_laugh_3.png" id="31_31kbs"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_laugh_4.png" id="32_ml1kv"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_laugh_5.png" id="33_cyhqr"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_laugh_6.png" id="34_djbsb"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_laugh_7.png" id="35_3o1ys"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/mushroom_girl_laugh_8.png" id="36_t7dk3"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8grv1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_elkcu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_tdxbt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_l6lbp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8mefu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_megdp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_emq17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ma2f4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_k5dlw")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_nxiw3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8rher")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ojebc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_rlcsg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_betc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ywa87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_x7kl5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ekdtm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_8j7ka")
+}],
+"loop": 0,
+"name": &"hurt",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_81r5j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_o8wbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_1gehp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_n0vwg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_8mqyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_hppnp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_ua3ha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_6vik3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_oeqdo")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_vhtio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_xgsuj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_xuqqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_31kbs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ml1kv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_cyhqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_djbsb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_3o1ys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_t7dk3")
+}],
+"loop": 0,
+"name": &"laugh",
+"speed": 9.0
+}]

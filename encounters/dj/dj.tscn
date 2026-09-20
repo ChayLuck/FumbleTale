@@ -1,0 +1,62 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://encounters/dj/dj.gd" id="1"]
+[ext_resource type="Resource" path="res://encounters/dj/dj_data.tres" id="2"]
+[ext_resource type="PackedScene" path="res://components/dialog_box.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://components/encounter_menu.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://components/encounter_arena.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://components/encounter_hud.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://components/rhythm_tracker.tscn" id="7"]
+[ext_resource type="PackedScene" path="res://components/beat_kick.tscn" id="9"]
+[ext_resource type="PackedScene" path="res://components/end_screen.tscn" id="10"]
+[ext_resource type="PackedScene" path="res://components/inventory_menu.tscn" id="11"]
+[ext_resource type="Script" path="res://components/theme_backdrop.gd" id="12"]
+[ext_resource type="PackedScene" path="res://components/ambient_dust.tscn" id="13"]
+[ext_resource type="Script" path="res://encounters/dj/grid_overlay.gd" id="14"]
+
+[node name="Dj" type="Node2D"]
+script = ExtResource("1")
+data = ExtResource("2")
+
+[node name="Background" type="TextureRect" parent="."]
+unique_name_in_owner = true
+offset_right = 640.0
+offset_bottom = 480.0
+script = ExtResource("12")
+
+[node name="AmbientDustBg" parent="." instance=ExtResource("13")]
+unique_name_in_owner = true
+
+[node name="EnemySprite" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(320, 150)
+scale = Vector2(2.2, 2.2)
+
+[node name="EncounterHud" parent="." instance=ExtResource("6")]
+unique_name_in_owner = true
+
+[node name="EncounterArena" parent="." instance=ExtResource("5")]
+unique_name_in_owner = true
+shape = "rect"
+
+[node name="GridOverlay" type="Node2D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("14")
+
+[node name="DialogBox" parent="." instance=ExtResource("3")]
+unique_name_in_owner = true
+
+[node name="EncounterMenu" parent="." instance=ExtResource("4")]
+unique_name_in_owner = true
+
+[node name="RhythmTracker" parent="." instance=ExtResource("7")]
+unique_name_in_owner = true
+
+[node name="BeatKick" parent="." instance=ExtResource("9")]
+unique_name_in_owner = true
+
+[node name="EndScreen" parent="." instance=ExtResource("10")]
+unique_name_in_owner = true
+
+[node name="InventoryMenu" parent="." instance=ExtResource("11")]
+unique_name_in_owner = true

@@ -1,0 +1,46 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_portrait_idle_0.png" id="1_uw011"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_portrait_idle_1.png" id="2_7apti"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_portrait_idle_2.png" id="3_h1a3v"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_portrait_idle_3.png" id="4_3p4yd"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_portrait_idle_4.png" id="5_gtxh5"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_portrait_idle_5.png" id="6_2kvhd"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_portrait_idle_6.png" id="7_lhjpi"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_portrait_idle_7.png" id="8_xfj37"]
+[ext_resource type="Texture2D" path="res://forest/assets/anim/ivy_portrait_idle_8.png" id="9_5wvpu"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_uw011")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7apti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_h1a3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3p4yd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gtxh5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2kvhd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_lhjpi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xfj37")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_5wvpu")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 9.0
+}]

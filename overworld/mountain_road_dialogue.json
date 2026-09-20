@@ -1,0 +1,107 @@
+{
+	"nodes": [
+		{
+			"id": "intro",
+			"lines": [
+				"Hisame leads you out through a door that wasn't there a moment ago.",
+				"Cold air bites at your face. The ruins stretch on ahead, mountains rising pale and merciless beyond them."
+			]
+		},
+		{
+			"event": "bust_idle",
+			"id": "trigger_1",
+			"lines": [
+				"\"Where are we even going?\" you ask.",
+				"Hisame doesn't answer. She doesn't even glance back."
+			]
+		},
+		{
+			"event": "bust_angry",
+			"id": "trigger_2",
+			"lines": [
+				"\"Come on — I should at least know what we're doing,\" you press.",
+				"Hisame stops mid-step. When she turns, her glare could frost the air itself.",
+				"\"You don't need to know anything,\" she says. \"You do as I say. You don't talk unless I tell you to.\"",
+				"\"Your training has started. I won't tolerate any more foolishness from you — next time, I'll punish it.\"",
+				"\"Don't forget: you're only alive because of me.\""
+			]
+		},
+		{
+			"event": "bust_idle",
+			"id": "trigger_3",
+			"lines": [
+				"Hisame slows, glancing at you sideways, waiting to see what you'll do with the silence she's given you."
+			],
+			"next": "t3_choice"
+		},
+		{
+			"id": "t3_choice",
+			"options": [
+				{
+					"label": "Are we going to kill someone?",
+					"next": "t3_slap"
+				},
+				{
+					"label": "I'm sorry.",
+					"next": "t3_slap"
+				},
+				{
+					"label": "Follow silently",
+					"next": "t3_obedient"
+				}
+			]
+		},
+		{
+			"event": "obedient_ending",
+			"id": "t3_obedient",
+			"lines": [
+				"You say nothing and simply fall into step behind her.",
+				"Hisame glances back, something almost like approval flickering across her face."
+			]
+		},
+		{
+			"event": "bust_slap",
+			"id": "t3_slap",
+			"lines": [
+				"The slap catches you before you finish the sentence, sharp and cold as the air around you.",
+				"\"I didn't ask for your voice,\" she says."
+			],
+			"next": "t3_apology_choice"
+		},
+		{
+			"id": "t3_apology_choice",
+			"options": [
+				{
+					"label": "Apologize",
+					"next": "t3_apologize"
+				},
+				{
+					"label": "Don't apologize",
+					"next": "t3_defiant"
+				}
+			]
+		},
+		{
+			"event": "apologize_ending",
+			"id": "t3_apologize",
+			"lines": [
+				"\"...I'm sorry,\" you say.",
+				"She studies you a moment, then scoffs. \"Stupid.\" She turns and keeps walking."
+			]
+		},
+		{
+			"event": "defiant_ending",
+			"id": "t3_defiant",
+			"lines": [
+				"You hold her gaze and say nothing."
+			]
+		},
+		{
+			"id": "exit_line",
+			"lines": [
+				"\"Keep up,\" Hisame says, not looking back to check that you are."
+			]
+		}
+	],
+	"start_id": "intro"
+}

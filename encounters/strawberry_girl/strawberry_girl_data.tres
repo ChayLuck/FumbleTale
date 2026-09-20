@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3]
+
+[ext_resource type="Script" path="res://core/encounter_data.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://forest/assets/strawberry_girl_frames.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+enemy_name = "Strawberry Girl"
+enemy_max_hp = 55
+player_max_hp = 20
+intro_lines = Array[String](["\"Now taste my strawberry!\""])
+menu_labels = Array[String](["Strike", "Item"])
+theme_color = Color(0.9, 0.2, 0.32, 1)
+enemy_frames = ExtResource("2")
+return_scene = "res://forest/forest.tscn"
