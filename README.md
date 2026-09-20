@@ -3,6 +3,7 @@
 It's a game that i enjoyed making it and learned so much while doing so. Recently got frustrated enough not to continue developing. Current state is not great but i am proud to serve the build of my own.
 
 Controls: "Arrow keys" for movement, "space" and "enter" for actions. Sidescroller maps have "shift" key and "enter" and "q" buttons doing something different.
+https://chayluck.itch.io/fumbletale
 
 <img width="1278" height="961" alt="Menu" src="https://github.com/user-attachments/assets/5fd52e37-44d4-4453-b2fa-8231f300b1d4" />
 <img width="1183" height="861" alt="1f" src="https://github.com/user-attachments/assets/c78f4328-d71e-421a-84f2-d1918a284806" />
